@@ -27,6 +27,7 @@ import {
   teamHome,
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
+import Hero2 from '~/components/widgets/Hero2';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -35,16 +36,16 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Hero {...heroHome} />
+      <Hero2 {...heroHome} />
       <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Steps {...stepsHome} />
       <Testimonials {...testimonialsHome} />
-      <FAQs2 {...faqs2Home} />
+     {/* <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
-      <Team {...teamHome} />
+      <Team {...teamHome} />*/}
       <Contact {...contactHome} />
       <CallToAction2 {...callToAction2Home} />
     </>

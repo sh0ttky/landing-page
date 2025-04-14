@@ -54,7 +54,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
           </p>
         </div>
         <div className="relative -mb-6">
-          {items &&
+        {/*{items &&
             items.map(({ title, description, href, form }, index) => (
               <div key={`call-to-action-item-${index}`}>
                 {href ? (
@@ -71,7 +71,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
                   <Card title={title} description={description} href={href} form={form} />
                 )}
               </div>
-            ))}
+            ))} */} 
         </div>
       </div>
     </div>
