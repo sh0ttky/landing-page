@@ -37,8 +37,8 @@ const Page = () => {
       <Features4 {...featuresFourAboutTwo} />
       <Steps {...stepsAbout} />
       <Features3 {...features3About} />
-      <Features {...featuresAbout} />
-      <Team2 {...teamAbout} />
+      {/* <Features {...featuresAbout} /> */}
+      {/* <Team2 {...teamAbout} /> */}
       <Testimonials2 {...testimonials2About} />
       <FAQs {...faqsAbout} />
       <Contact {...contactAbout} />
