@@ -38,17 +38,21 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Great companies are made by great people',
+  title: 'Qui sommes-nous ?',
   subtitle:
-    'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui.',
-  tagline: 'About Us Demo Page',
+    "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
+    réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
+    l'Europe - notre entreprise allie expertise technique et approche multiculturelle pour répondre \
+    aux défis technologiques les plus exigeants. Avec plus de 8 ans d'expérience cumulée dans divers \
+    domaines de pointe, nos équipes pluridisciplinaires accompagnent les clients tout au long de leur projet.",
+  tagline: 'A propos',
   callToAction: {
-    text: 'View jobs',
+    text: 'Nous rejoindre',
     href: 'https://www.linkedin.com/',
     targetBlank: true,
   },
   callToAction2: {
-    text: 'Contact us',
+    text: 'Nous contactez',
     href: '/contact',
   },
   image: {
@@ -63,16 +67,16 @@ export const statsAbout: StatsProps = {
   hasBackground: true,
   items: [
     {
-      title: 13269,
-      description: 'Downloads',
+      title: 8,
+      description: 'Ans',
     },
     {
-      title: 24.8,
-      description: 'Stars',
+      title: 2,
+      description: 'Continent',
     },
     {
-      title: 1767.77,
-      description: 'Forks',
+      title: 4,
+      description: 'Agences',
     },
     {
       title: 484000,
@@ -81,15 +85,23 @@ export const statsAbout: StatsProps = {
   ],
 };
 
+//  Avec une présence stratégique en Europe et en Afrique, \
+//     nous combinons rigueur industrielle et agilité locale pour servir des clients diversifiés, des startups aux grands \
+//     groupes, dans des secteurs aussi variés que l’IoT, la domotique, le ferroviaire ou les énergies renouvelables.
 // FeaturesFour data on About page *******************
 export const featuresFourAbout: FeaturesProps = {
   id: 'features-four-on-about',
   hasBackground: false,
   header: {
-    title: 'Our mission',
+    title: 'Notre coeur de métier',
     subtitle:
-      'Quisque laoreet nisi et lectus consectetur, at placerat libero dictum. Donec sed hendrerit turpis. Nunc vel nibh blandit, hendrerit turpis non, mattis magna. Duis feugiat dui mi, eget iaculis ligula gravida congue. Nam quis mauris id eros imperdiet imperdiet. In et dolor non nisi vestibulum rhoncus nec eget dolor.',
-    tagline: 'Mission and Values',
+      'Proposer des solutions technologiques performantes et adaptées, alliant expertise technique et innovation, \
+      pour répondre aux défis les plus exigeants. Que ce soit pour le développement de systèmes embarqués avancés, \
+      la réalisation de projets électroniques complexes ou l’optimisation de solutions logicielles, notre équipe \
+      s’engage à fournir un accompagnement personnalisé et des résultats d’excellence. Chez nous, la technologie \
+      rencontre l’expertise pour construire l’innovation de demain. Faites confiance à des passionnés, choisissez \
+      l’excellence technique.',
+    tagline: 'Savoir faire',
   },
 };
 
@@ -98,42 +110,45 @@ export const featuresFourAboutTwo: FeaturesProps = {
   id: 'features-four-on-about-two',
   hasBackground: false,
   header: {
-    title: 'Our values',
-    subtitle: 'Etiam tellus tortor, mattis id mauris et, lobortis ullamcorper nunc.',
+    title: 'Nos valeurs',
+    subtitle: 'Découvrez les principes fondamentaux qui guident notre entreprise au quotidien.',
+    tagline: 'Valeurs',
   },
   isAfterContent: true,
   columns: 2,
   items: [
     {
-      title: 'Customer-centricity',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Approche client',
+      description:
+        'Nous plaçons nos clients au cœur de nos préoccupations pour offrir des solutions adaptées à leurs besoins.',
       icon: IconUser,
     },
     {
-      title: 'Innovation and adaptability',
+      title: 'Innovation et adaptabilité',
       description:
-        'Etiam ornare, purus nec venenatis porttitor, velit leo convallis dui, at porttitor nibh tortor quis velit.',
+        "Nous cultivons l'innovation et restons flexibles pour répondre aux évolutions du marché et des technologies.",
       icon: IconBulb,
     },
     {
-      title: 'Quality assurance',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Garantie qualité',
+      description:
+        "Nous nous engageons à fournir des produits et services d'excellence grâce à des processus rigoureux.",
       icon: IconThumbUp,
     },
     {
-      title: 'Accessibility and customization',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Accessibilité et personnalisation',
+      description: 'Nos solutions sont conçues pour être accessibles à tous et personnalisables selon vos exigences.',
       icon: IconAdjustments,
     },
     {
-      title: 'Collaboration and partnership',
+      title: 'Collaboration et partenariat',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
+        "Nous croyons en la force du travail d'équipe et des partenariats durables pour créer une valeur partagée.",
       icon: IconHeartHandshake,
     },
     {
-      title: 'Ethical and responsible design',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Conception éthique et responsable',
+      description: 'Nous intégrons des principes éthiques et durables dans toutes nos réalisations.',
       icon: IconHomeEco,
     },
   ],
@@ -145,40 +160,44 @@ export const stepsAbout: StepsProps = {
   hasBackground: true,
   isImageDisplayed: false,
   header: {
-    title: 'History of TailNext',
-    subtitle:
-      'Duis sit amet magna et sapien cursus fermentum. Curabitur ac mauris non magna condimentum scelerisque. Aliquam nunc ipsum, semper ac scelerisque sit amet, pulvinar vitae libero.',
-    tagline: 'Company History',
+    title: 'Histoire du MHTC',
+    subtitle: 'Regroupement de jeunes ingénieurs passionnés par les technologies embarquées depuis 2017.',
+    tagline: 'Notre parcours technologique',
   },
   items: [
     {
-      title: 'Our foundation',
+      title: 'Nos débuts',
       description:
-        'Donec pharetra, justo a rutrum venenatis, augue erat porta leo, non eleifend dui lectus ut turpis. Fusce tincidunt mattis magna eu commodo. Proin non facilisis enim, ut luctus dolor.',
+        "Fondé par une équipe d'ingénieurs en systèmes embarqués, le MHTC démarre avec une vision : révolutionner \
+        les bancs de test et solutions logicielles pour l'industrie high-tech.",
       icon: IconNumber1,
     },
     {
-      title: 'The early years',
+      title: 'Les premières années',
       description:
-        'Nunc scelerisque dui non nulla faucibus, sed elementum urna congue. Donec varius nisi sit amet massa malesuada euismod. Donec auctor interdum leo eget ultricies.',
+        'Développement de nos premiers prototypes de bancs de test automatisés et spécialisation dans les \
+        architectures temps réel pour applications critiques.',
       icon: IconNumber2,
     },
     {
-      title: 'Growth',
+      title: 'Phase de croissance',
       description:
-        'Vestibulum euismod dolor vel magna consectetur, vitae ornare metus finibus. Nam nec magna lacinia, cursus purus ut, pellentesque ex. Aliquam nec porta sapien, nec iaculis odio. Donec sed lacus arcu.',
+        'Élargissement de notre expertise aux systèmes IoT connectés et obtention de certifications qualité \
+        pour nos solutions embarquées dans les secteurs ferroviaire et automobile.',
       icon: IconNumber3,
     },
     {
-      title: 'Expanding horizons',
+      title: 'Diversification',
       description:
-        'Aenean mollis est ac quam viverra, eget dictum justo iaculis. Morbi venenatis neque sed blandit faucibus. Pellentesque sit amet justo at ligula eleifend lacinia. Etiam nec orci quam.',
+        'Lancement de notre division R&D en intelligence embarquée et partenariats stratégiques avec des leaders \
+        industriels pour des solutions sur mesure.',
       icon: IconNumber4,
     },
     {
-      title: 'Our ongoing commitment',
+      title: 'Notre engagement actuel',
       description:
-        'Sed vel purus a odio tincidunt mollis. Nam et tortor est. Aliquam sodales interdum tortor ac condimentum. Suspendisse laoreet nulla est, ac luctus est tempus ut.',
+        "Poursuite de l'innovation dans les systèmes cyber-physiques et développement de plateformes de test \
+        intelligentes intégrant l'IA pour les systèmes critiques.",
       icon: IconNumber5,
     },
   ],
@@ -190,40 +209,40 @@ export const features3About: FeaturesProps = {
   hasBackground: false,
   columns: 3,
   header: {
-    title: 'Our culture',
+    title: "Notre culture d'entreprise",
     subtitle:
-      'Nullam maximus ante eros, ac eleifend mi condimentum ut. Donec volutpat felis ac purus pretium, vitae mollis quam scelerisque.',
+      'Découvrez les piliers fondamentaux qui façonnent notre identité et notre manière de travailler ensemble.',
     tagline: 'culture',
   },
   items: [
     {
-      title: 'Customer engagement',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Engagement client',
+      description: 'Nous développons des relations durables avec nos clients en écoutant activement leurs besoins.',
       icon: IconCirclesRelation,
     },
     {
-      title: 'Creativity and design excellence',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Créativité et excellence design',
+      description: 'Nous combinons innovation esthétique et fonctionnelle pour des solutions à forte valeur ajoutée.',
       icon: IconPalette,
     },
     {
-      title: 'Continuous learning',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Apprentissage continu',
+      description: 'Nous encourageons la formation et le développement des compétences en permanence.',
       icon: IconBook,
     },
     {
-      title: 'Collaboration and cross-functionality',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Collaboration transversale',
+      description: 'Nos équipes pluridisciplinaires travaillent en synergie pour des résultats optimaux.',
       icon: IconPuzzle2,
     },
     {
-      title: 'Entrepreneurial spirit',
-      description: 'Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus.',
+      title: 'Esprit entrepreneurial',
+      description: "Nous cultivons l'initiative et la prise d'actions pour faire grandir notre entreprise.",
       icon: IconFlame,
     },
     {
-      title: 'Employee well-being and balance',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Bien-être et équilibre',
+      description: "Nous veillons à l'épanouissement professionnel et personnel de nos collaborateurs.",
       icon: IconScale,
     },
   ],
@@ -487,11 +506,11 @@ export const testimonials2About: TestimonialsProps = {
   },
   testimonials: [
     {
-      name: 'Jane Smith',
-      job: 'UX Designer',
-      testimonial: `Your templates have been a game-changer for my projects. They're not just beautifully designed; they're also incredibly easy to customize. Thanks to your templates, I've been able to save time and deliver stunning websites to my clients.`,
+      name: 'Verdino',
+      job: 'Retired commander',
+      testimonial: `اهل الشاقور - ras ytir`,
       image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VXxvUPP9sU-zorcs0pfqL_vGWVcLhBS1Rw&s',
         alt: 'Jane Smith',
       },
       href: '/',
@@ -554,35 +573,46 @@ export const faqsAbout: FAQsProps = {
   id: 'faqs-on-faqs',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
-    tagline: 'FAQS',
+    title: 'Questions Fréquemment Posées',
+    subtitle: 'Retrouvez ici les réponses aux questions les plus courantes sur notre entreprise et nos activités.',
+    tagline: 'FAQ',
   },
   items: [
     {
-      title: 'Who we are and what we do?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'Qui sommes-nous et que faisons-nous ?',
+      description: `Nous sommes une équipe d'ingénieurs spécialisés dans les systèmes embarqués, les bancs de test \
+      et le développement logiciel. Nous concevons des solutions high-tech pour des industries telles que \
+      l'ferroviaire, l'automobile et l'IoT industriel.`,
     },
     {
-      title: 'What values and principles guide our work?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'Quelles valeurs guident notre travail ?',
+      description: `Notre approche s'appuie sur l'excellence technique, l'innovation constante et la qualité \
+      des solutions. Nous privilégions des méthodes agiles et une approche orientée résultats pour répondre \
+      aux besoins spécifiques de nos clients.`,
     },
     {
-      title: 'What is our experience?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'Quelle est notre expérience ?',
+      description: `Fort de plusieurs années d'expérience, nous avons réalisé de nombreux projets complexes \
+      impliquant des systèmes temps réel, des architectures embarquées critiques et des plateformes de test \
+      automatisées pour divers secteurs industriels.`,
     },
     {
-      title: 'What is our team like?',
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: 'Comment est composée notre équipe ?',
+      description: `Notre équipe pluridisciplinaire rassemble des ingénieurs en électronique, informatique \
+      industrielle et automatisme, ainsi que des experts en validation logicielle et en cybersécurité des \
+      systèmes embarqués.`,
     },
     {
-      title: 'How do we engage with the community?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: "Comment interagissons-nous avec l'écosystème technologique ?",
+      description: `Nous collaborons activement avec des laboratoires de recherche, participons à des \
+      conférences techniques et contribuons à des projets open-source dans notre domaine d'expertise. \
+      Nous formons également des partenariats stratégiques avec des acteurs industriels.`,
     },
     {
-      title: 'What support channels do we offer?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'Quels canaux de support proposons-nous ?',
+      description: `Nous offrons un support technique spécialisé 24/7 pour les systèmes critiques, une \
+      assistance en ingénierie pour nos solutions, ainsi que des formations sur mesure pour nos clients \
+      et partenaires.`,
     },
   ],
 };
@@ -592,25 +622,25 @@ export const contactAbout: ContactProps = {
   id: 'contact-on-about',
   hasBackground: true,
   header: {
-    title: 'Contact us',
-    tagline: 'Contact info',
+    title: 'Contactez-nous',
+    tagline: 'Coordonnées',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    "Notre équipe d'experts en systèmes embarqués est à votre disposition pour répondre à vos questions techniques et discuter de vos projets innovants.",
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Adresse',
+      description: ['Parc Technologique High-Tech', 'Bâtiment A, 31000 Toulouse, France'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Contact direct',
+      description: ['Tél : +33 (0)5 61 23 45 67', 'Email : contact@mhtc-embedded.com'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: "Horaires d'ouverture",
+      description: ['Lundi - Vendredi : 09h00 - 18h00', 'Samedi : 09h00 - 12h00 (support urgent uniquement)'],
       icon: IconClock,
     },
   ],
@@ -618,34 +648,34 @@ export const contactAbout: ContactProps = {
     inputs: [
       {
         type: 'text',
-        label: 'Name',
+        label: 'Nom complet',
         name: 'name',
-        placeholder: 'Introduce your name',
+        placeholder: 'Votre nom et prénom',
         autocomplete: 'off',
       },
       {
         type: 'email',
-        label: 'Email address',
+        label: 'Adresse email',
         name: 'email',
-        placeholder: 'Introduce your email address',
+        placeholder: 'Votre email professionnel',
         autocomplete: 'on',
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
-      label: 'How can we help you?',
+      label: 'Votre message',
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Décrivez votre projet ou demande technique...',
     },
     checkboxes: [
       {
-        label: 'Have you read our privacy policy?',
+        label: "J'ai lu et accepte la politique de confidentialité",
         value: '',
       },
     ],
     btn: {
-      title: 'Contact us',
+      title: 'Envoyer le message',
       type: 'submit',
     },
   },
