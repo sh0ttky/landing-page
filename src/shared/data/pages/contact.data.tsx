@@ -4,14 +4,14 @@ import { HeroProps } from '~/shared/types';
 
 // Hero data on Contact page *******************
 export const heroContact: HeroProps = {
-  title: 'Get in touch with us',
+  title: 'Contactez notre équipe',
   subtitle: (
     <>
-      <span className="hidden md:inline">{`Thank you for considering us for your project! We're excited to hear from you.`}</span>{' '}
-      {`Our team can assist you in building your dream website.`}
+      <span className="hidden md:inline">{`Vous avez un projet en systèmes embarqués ? Nous sommes là pour vous accompagner.`}</span>{' '}
+      {`Nos experts techniques sont à votre disposition pour discuter de vos besoins.`}
     </>
   ),
-  tagline: 'Demo Contact Page',
+  tagline: 'Contactez MHTC',
 };
 
 // Contact data on Contact page *******************
@@ -19,92 +19,92 @@ export const contact2Contact: ContactProps = {
   id: 'contactTwo-on-contact',
   hasBackground: true,
   header: {
-    title: 'Contact us',
+    title: 'Formulaire de contact',
     subtitle: (
       <>
-        Please take a moment to fill out this form.{' '}
-        <span className="hidden md:inline">{`So we can better understand your needs and get the process started smoothly.`}</span>
+        Remplissez ce formulaire pour nous faire part de votre projet.{' '}
+        <span className="hidden md:inline">{`Nous reviendrons vers vous dans les plus brefs délais pour échanger sur vos besoins techniques.`}</span>
       </>
     ),
   },
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Notre adresse',
+      description: ['Parc Technologique High-Tech', 'Bâtiment A, 31000 Toulouse, France'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Contact direct',
+      description: ['Tél : +33 (0)5 61 23 45 67', 'Email : contact@mhtc-embedded.com'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: "Horaires d'ouverture",
+      description: ['Lundi - Vendredi : 09h00 - 18h00', 'Samedi : 09h00 - 12h00 (urgences)'],
       icon: IconClock,
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'Prêt à démarrer votre projet ?',
     inputs: [
       {
         type: 'text',
-        label: 'First name',
+        label: 'Prénom',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'First name',
+        placeholder: 'Votre prénom',
       },
       {
         type: 'text',
-        label: 'Last name',
+        label: 'Nom',
         name: 'lastName',
         autocomplete: 'off',
-        placeholder: 'Last name',
+        placeholder: 'Votre nom',
       },
       {
         type: 'email',
-        label: 'Email address',
+        label: 'Adresse email',
         name: 'email',
         autocomplete: 'on',
-        placeholder: 'Email address',
+        placeholder: 'Votre email professionnel',
       },
     ],
     radioBtns: {
-      label: 'What is the reason for your contact?',
+      label: 'Motif de votre contact',
       radios: [
         {
-          label: 'General inquiries',
+          label: 'Demande générale',
         },
         {
-          label: 'Technical help',
+          label: 'Support technique',
         },
         {
-          label: 'Claims',
+          label: 'Devis/projet',
         },
         {
-          label: 'Others',
+          label: 'Autre demande',
         },
       ],
     },
     textarea: {
       cols: 30,
       rows: 5,
-      label: 'How can we help you?',
+      label: 'Détails de votre demande',
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Décrivez votre projet ou besoin technique...',
     },
     checkboxes: [
       {
-        label: 'Have you read our privacy policy?',
+        label: "J'ai lu et accepte la politique de confidentialité",
         value: '',
       },
       {
-        label: 'Do you want to receive monthly updates by email?',
+        label: 'Je souhaite recevoir les actualités techniques par email',
         value: '',
       },
     ],
     btn: {
-      title: 'Send Message',
+      title: 'Envoyer le message',
       type: 'submit',
     },
   },
@@ -114,34 +114,34 @@ export const contact2Contact: ContactProps = {
 export const features2Contact: FeaturesProps = {
   columns: 3,
   header: {
-    title: 'Support Center',
-    subtitle: 'Looking for something in particular?',
+    title: "Centre d'assistance",
+    subtitle: "Besoin d'une information spécifique ?",
   },
   items: [
     {
-      title: 'Have a question?',
-      description: 'See our frequently asked questions',
+      title: 'Questions techniques ?',
+      description: 'Consultez notre foire aux questions',
       icon: IconHelp,
       callToAction: {
-        text: 'Go to FAQ page',
+        text: 'Voir les FAQ',
         href: '/faqs',
       },
     },
     {
-      title: 'Chat with us',
-      description: 'Live chat with our support team',
+      title: 'Chat en direct',
+      description: 'Discutez avec notre équipe support',
       icon: IconMessages,
       callToAction: {
-        text: 'Write to us',
+        text: 'Ouvrir le chat',
         href: '/',
       },
     },
     {
-      title: 'Get help',
-      description: 'Speak to our team today',
+      title: 'Support technique',
+      description: 'Contactez nos ingénieurs',
       icon: IconHeadset,
       callToAction: {
-        text: 'Call us',
+        text: 'Nous appeler',
         href: '/',
       },
     },
