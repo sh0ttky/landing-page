@@ -41,16 +41,16 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-     Au cœur de l'embarqué.
+      Au cœur de l'embarqué.
     </>
   ),
   subtitle: (
     <>
-Engagés depuis 2017 pour fournir des solutions technologiques innovantes.
+      Engagés depuis 2017 pour fournir des solutions technologiques innovantes.
     </>
   ),
-  
-  
+
+
   /* callToAction: {
     text: 'Get template',
     href: 'https://github.com/onwidget/tailnext',
@@ -58,7 +58,7 @@ Engagés depuis 2017 pour fournir des solutions technologiques innovantes.
     targetBlank: true,
   }, */
   callToAction2: {
-    text: 'découvrir',
+    text: 'En savoir plus',
     href: '/about',
   },
   image: {
@@ -599,59 +599,68 @@ export const teamHome: TeamProps = {
 
 // Contact data on Home page *******************
 export const contactHome: ContactProps = {
+  id: 'contact-on-home',
   hasBackground: true,
   header: {
-    title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
-    tagline: 'Contact',
+    title: 'Contactez-nous',
+    tagline: 'Coordonnées',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    "Notre équipe d'experts en systèmes embarqués est à votre disposition pour répondre à vos questions techniques et discuter de vos projets innovants.",
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Adresse',
+      description: ['Parc Technologique High-Tech', 'Bâtiment A, 31000 Toulouse, France'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Contact direct',
+      description: ['Tél : +33 (0)5 61 23 45 67', 'Email : contact@mhtc-embedded.com'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: "Horaires d'ouverture",
+      description: ['Lundi - Vendredi : 09h00 - 18h00', 'Samedi : 09h00 - 12h00 (support urgent uniquement)'],
       icon: IconClock,
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
     inputs: [
       {
         type: 'text',
+        label: 'Nom complet',
         name: 'name',
+        placeholder: 'Votre nom et prénom',
         autocomplete: 'off',
-        placeholder: 'Your name',
       },
       {
         type: 'email',
+        label: 'Adresse email',
         name: 'email',
+        placeholder: 'Votre email professionnel',
         autocomplete: 'on',
-        placeholder: 'Your email address',
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
+      label: 'Votre message',
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Décrivez votre projet ou demande technique...',
     },
+    checkboxes: [
+      {
+        label: "J'ai lu et accepte la politique de confidentialité",
+        value: '',
+      },
+    ],
     btn: {
-      title: 'Send Message',
+      title: 'Envoyer le message',
       type: 'submit',
     },
   },
 };
+
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
