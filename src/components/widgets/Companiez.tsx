@@ -5,28 +5,41 @@ import { Marquee } from "../magicui/marquee";
 
 const companys = [
   {
-   id:1,
+    id: 1,
     img: "/companies/alstom.png",
   },
   {
-    id:2,
+    id: 2,
     img: "/companies/continental.svg",
   },
   {
-    id:3,
+    id: 3,
     img: "/companies/airbus.png",
   },
   {
-    id:4,
+    id: 4,
     img: "/companies/vitesco.png",
   },
   {
-    id:5,
+    id: 5,
     img: "/companies/total.png",
   },
   {
-    id:6,
+    id: 6,
     img: "/companies/framatome.png",
+  },
+  {
+
+    id: 7,
+    img: "/companies/skipper_ndt.png",
+  },
+  {
+    id: 8,
+    img: "/companies/poma.png",
+  },
+  {
+    id: 9,
+    img: "/companies/cactile.png",
   },
 ];
 
@@ -36,7 +49,7 @@ const Logoz = ({
 
 }: {
   img: string;
- 
+
 }) => {
   return (
     <div
@@ -45,7 +58,7 @@ const Logoz = ({
 
       )}
     >
-        <img className="my-auto" width="100%" height="100%" alt="" src={img} />
+      <img className="my-auto" width="100%" height="100%" alt="" src={img} />
 
     </div>
   );
@@ -53,8 +66,18 @@ const Logoz = ({
 
 export function CompaniezCarousel() {
   return (
+
     <div className="relative flex w-full flex-col my-auto items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover className=" [--duration:20s]">
+
+      <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
+        Clients
+      </p>
+
+      <p className="font-heading mb-4 px-4 font-bold text-4xl md:text-5xl text-center">
+        Ils nous font confiance
+      </p>
+
+      <Marquee className=" [--duration:20s]">
         {companys.map((company) => (
           <Logoz key={company.id} {...company} />
         ))}

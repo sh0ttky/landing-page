@@ -38,19 +38,21 @@ export default function Page() {
   return (
     <>
       <Hero2 {...heroHome} />
-      <SocialProof {...socialProofHome} />
 
-      <CompaniezCarousel/>
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Steps {...stepsHome} />
-      <Testimonials {...testimonialsHome} />
-     {/* <FAQs2 {...faqs2Home} />
+
+      {/* <SocialProof {...socialProofHome} /> */}
+      <CompaniezCarousel />
+
+      {/* <Testimonials {...testimonialsHome} /> */}
+      {/* <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
       <Team {...teamHome} />*/}
       <Contact {...contactHome} />
-      <CallToAction2 {...callToAction2Home} />
+      {/* <CallToAction2 {...callToAction2Home} /> */}
     </>
   );
 }
