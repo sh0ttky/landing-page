@@ -16,7 +16,7 @@ const CallToAction = ({ title, subtitle, callToAction, id, hasBackground = false
           <CTA
             callToAction={callToAction as CallToActionType}
             containerClass="mt-6 sm:mx-auto sm:w-fit"
-            linkClass="btn btn-primary"
+            linkClass="btn bg-foreground"
           />
         )}
       </div>

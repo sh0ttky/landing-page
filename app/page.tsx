@@ -28,6 +28,7 @@ import {
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
 import Hero2 from '~/components/widgets/Hero2';
+import { CompaniezCarousel } from '~/components/widgets/Companiez';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -38,6 +39,8 @@ export default function Page() {
     <>
       <Hero2 {...heroHome} />
       <SocialProof {...socialProofHome} />
+
+      <CompaniezCarousel/>
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />

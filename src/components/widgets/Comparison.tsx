@@ -13,7 +13,7 @@ const Comparison = ({ header, columns, id, hasBackground = false }: ComparisonPr
           key={`column-content-${index}`}
           className={`relative mx-auto w-full min-w-fit max-w-3xl select-none border-r border-solid border-gray-300 px-4 py-4 first-of-type:sticky first-of-type:left-0 first-of-type:z-10 first-of-type:w-auto ${
             hasBackground
-              ? 'first-of-type:bg-primary-50 first-of-type:dark:bg-slate-800'
+              ? 'first-of-type:bg-foreground-50 first-of-type:dark:bg-slate-800'
               : 'first-of-type:bg-white first-of-type:dark:bg-slate-900'
           } first-of-type:pl-6 last-of-type:border-none dark:border-slate-500  md:px-5 md:first-of-type:w-full md:first-of-type:pl-5`}
         >
@@ -42,7 +42,7 @@ const Comparison = ({ header, columns, id, hasBackground = false }: ComparisonPr
               </div>
             ))}
           {index !== 0 && callToAction && (
-            <CTA callToAction={callToAction as CallToActionType} linkClass="btn btn-primary mt-8" />
+            <CTA callToAction={callToAction as CallToActionType} linkClass="btn bg-foreground mt-8" />
           )}
         </div>
       ))}

@@ -67,6 +67,9 @@ export const statsAbout: StatsProps = {
   hasBackground: true,
   items: [
     {
+      title: 'Depuis 2017',
+    },
+    {
       title: 8,
       description: 'Ans',
     },
@@ -78,10 +81,7 @@ export const statsAbout: StatsProps = {
       title: 4,
       description: 'Agences',
     },
-    {
-      title: 484000,
-      description: 'Users',
-    },
+
   ],
 };
 

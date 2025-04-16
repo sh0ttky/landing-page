@@ -22,7 +22,7 @@ const FAQs3 = ({ header, items, callToAction, id, hasBackground = false }: FAQsP
           {callToAction && (
             <CTA
               callToAction={callToAction as CallToActionType}
-              linkClass="btn btn-primary mb-8 sm:w-auto sm:justify-start"
+              linkClass="btn bg-foreground mb-8 sm:w-auto sm:justify-start"
             />
           )}
         </div>

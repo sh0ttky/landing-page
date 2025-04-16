@@ -26,50 +26,32 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
+ 
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Solutions',
-          href: '/services',
-        },
-        {
-          label: 'A propos',
-          href: '/about',
-        },
-        {
-          label: 'Contactez nous',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Conditions générales',
-          href: '/terms',
-        },
-        {
-          label: 'Politique de confidentialité',
-          href: '/privacy',
-        },
-      ],
+      label: 'A propos',
+      href: '/about',
     },
     {
-      label: 'Blog',
+      label: 'Solutions',
+      href: '/services',
+    },
+    {
+      label: 'Actualités',
       href: '/blog',
     },
     {
-      label: 'Contact',
-      href: '/contact',
+      label: 'Carrières',
+      href: '/blog',
     },
+ 
+
+
   ],
   actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
+      text: 'Nous contacter',
+      href: '/contact',
+      targetBlank: false,
     },
   ],
   isSticky: true,

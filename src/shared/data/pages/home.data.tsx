@@ -41,31 +41,25 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+     Au cœur de l'embarqué.
     </>
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+Engagés depuis 2017 pour fournir des solutions technologiques innovantes.
     </>
   ),
-  callToAction: {
+  
+  
+  /* callToAction: {
     text: 'Get template',
     href: 'https://github.com/onwidget/tailnext',
     icon: IconDownload,
     targetBlank: true,
-  },
+  }, */
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'découvrir',
+    href: '/about',
   },
   image: {
     src: heroImg,

@@ -53,7 +53,7 @@ const Pricing = ({ header, prices, id, hasBackground = false }: PricingProps) =>
                             defaultIcon={IconCheck}
                             containerClass="gap-2 md:gap-y-2"
                             panelClass="flex items-start"
-                            iconClass="w-4 h-4 mt-1.5 mr-3 rtl:mr-0 rtl:ml-3 flex items-center justify-center rounded-full border-2 border-primary-600 bg-primary-600 text-white dark:text-slate-200"
+                            iconClass="w-4 h-4 mt-1.5 mr-3 rtl:mr-0 rtl:ml-3 flex items-center justify-center rounded-full border-2 border-primary bg-foreground-600 text-white dark:text-slate-200"
                           />
                         </div>
                       )}
@@ -61,7 +61,7 @@ const Pricing = ({ header, prices, id, hasBackground = false }: PricingProps) =>
                     {callToAction && (
                       <CTA
                         callToAction={callToAction as CallToActionType}
-                        linkClass={`btn ${hasRibbon ? 'btn-primary' : ''}`}
+                        linkClass={`btn ${hasRibbon ? 'bg-foreground' : ''}`}
                       />
                     )}
                   </div>
