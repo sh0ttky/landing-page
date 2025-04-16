@@ -5,7 +5,7 @@ import WidgetWrapper from '../common/WidgetWrapper';
 
 const Contact = ({ header, content, items, form, id, hasBackground = false }: ContactProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl">
-    {header && <Headline header={header} titleClass="text-3xl sm:text-5xl" />}
+    {header && <Headline header={header} titleClass="text-4xl sm:text-5xl" />}
     <div className="flex items-stretch justify-center">
       <div className={`grid ${!content && !items ? 'md:grid-cols-1' : 'md:grid-cols-2'}`}>
         <div className="h-full pr-6">

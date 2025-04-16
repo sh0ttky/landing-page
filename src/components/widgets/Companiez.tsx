@@ -14,33 +14,29 @@ const companys = [
   },
   {
     id: 3,
-    img: "/companies/airbus.png",
+    img: "/companies/gd.png",
   },
+
   {
     id: 4,
     img: "/companies/vitesco.png",
   },
-  {
-    id: 5,
-    img: "/companies/total.png",
-  },
-  {
-    id: 6,
-    img: "/companies/framatome.png",
-  },
+
+
   {
 
-    id: 7,
+    id: 5,
     img: "/companies/skipper_ndt.png",
   },
   {
-    id: 8,
+    id: 6,
     img: "/companies/poma.png",
   },
   {
-    id: 9,
+    id: 7,
     img: "/companies/cactile.png",
   },
+
 ];
 
 

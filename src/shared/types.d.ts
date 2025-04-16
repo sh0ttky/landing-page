@@ -284,6 +284,7 @@ type ContentProps = Widget & {
   image?: Image;
   isReversed?: boolean;
   isAfterContent?: boolean;
+  modelPath?: string;
 };
 
 type StepsProps = Widget & {

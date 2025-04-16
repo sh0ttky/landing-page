@@ -39,7 +39,7 @@ export default function Page() {
     <>
       <Hero2 {...heroHome} />
 
-      <Features {...featuresHome} />
+      {/* <Features {...featuresHome} /> */}
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Steps {...stepsHome} />

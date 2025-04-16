@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import { IconCheck } from '@tabler/icons-react';
 
@@ -5,6 +6,7 @@ import { ContentProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemGrid from '../common/ItemGrid';
+import { ModelViewer } from './3D';
 
 const Content = ({
   header,
@@ -15,6 +17,7 @@ const Content = ({
   isAfterContent,
   id,
   hasBackground = false,
+  modelPath,
 }: ContentProps) => (
   <WidgetWrapper
     id={id ? id : ''}
@@ -40,7 +43,7 @@ const Content = ({
         <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
           {image && (
             <div className="relative m-auto max-w-4xl">
-              <Image
+              {/* <Image
                 className="mx-auto w-full rounded-lg shadow-lg bg-gray-400 dark:bg-slate-700"
                 src={image.src}
                 width={828}
@@ -49,7 +52,8 @@ const Content = ({
                 sizes="(max-width: 768px) 100vw, 432px"
                 placeholder="blur"
                 quality={50}
-              />
+              /> */}
+              <ModelViewer modelPath={modelPath!} />
             </div>
           )}
         </div>

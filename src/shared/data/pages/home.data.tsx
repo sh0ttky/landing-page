@@ -208,6 +208,7 @@ export const contentHomeOne: ContentProps = {
   },
   isReversed: false,
   isAfterContent: false,
+  modelPath: "/glb2.glb"
 };
 
 // Content data on Home page *******************
@@ -242,6 +243,8 @@ export const contentHomeTwo: ContentProps = {
   },
   isReversed: true,
   isAfterContent: true,
+  modelPath: "/glb1.glb"
+
 };
 
 // Steps data on Home page *******************
