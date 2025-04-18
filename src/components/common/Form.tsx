@@ -72,7 +72,7 @@ const Form = ({
                   value={inputValues[index]}
                   onChange={changeInputValueHandler}
                   placeholder={placeholder}
-                  className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                  className="mb-2 w-full border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                 />
               </div>
             ))}
@@ -115,7 +115,7 @@ const Form = ({
               value={textareaValues}
               onChange={(e) => changeTextareaHandler(e)}
               placeholder={textarea.placeholder}
-              className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+              className="mb-2 w-full border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
             />
           </div>
         )}
@@ -145,7 +145,7 @@ const Form = ({
           className={`${btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'}`}
         >
           <button type={btn.type || 'button'} className="  bg-blue-800 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
->
+          >
             {btn.title}
           </button>
         </div>

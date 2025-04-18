@@ -1,4 +1,5 @@
 import { footerData2 } from '~/shared/data/global.data';
+import Logo from '../atoms/Logo';
 
 const Footer2 = () => {
   const { links, columns, socials, footNote } = footerData2;
@@ -8,6 +9,7 @@ const Footer2 = () => {
       <div className='max-w-7xl mx-auto justify-center'>
 
         <div className="xs:gap-8  mx-auto flex gap-4 gap-y-8 pt-8 ">
+          <Logo src={'/logo_white.png'} />
           {columns.map(({ title, texts }, index) => (
             <div
               key={`item-column-${index}`}
