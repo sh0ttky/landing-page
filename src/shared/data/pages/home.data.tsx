@@ -179,72 +179,81 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: 'Conception au forfait',
+    subtitle: 'Du devis à la livraison, nous maîtrisons toute la chaîne de développement',
+    tagline: 'Expertise technique',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Notre équipe d\'ingénieurs vous propose des forfaits adaptés pour vos projets IoT, banc d\'essais et automatisation, avec les dernières technologies du marché.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Expertise en définition de cahier des charges',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Formalisation technique sur votre produit'
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Développement sur mesure',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Solutions intégrant les microcontrôleurs ou processeurs ARM, avec protocoles modernes (IP, LoRaWAN, BLE, Thread)',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Forfaits prédéfinis',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Packages tout compris pour PoC (3-6 semaines), MVP (8-12 semaines) ou produit final (à partir de 16 semaines)',
+    },
+    {
+      title: 'Expertise transverse',
+      description:
+        'Combinaison efficace de compétences en électronique (PCB Altium, Kicad), firmware (C/C++/GoLang/Python/JS) et cloud (AWS IoT, Azure Sphere)',
     },
   ],
-  image: {
-    src: cameraFrontImg,
-    alt: 'Colorful Image',
-  },
   isReversed: false,
-  isAfterContent: false,
-  modelPath: "/glb2.glb"
+  isAfterContent: false
 };
 
 // Content data on Home page *******************
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
+  header: {
+    title: 'Accompagnement technique',
+    subtitle: 'Expertise à la demande pour vos projets complexes',
+    tagline: 'Services professionnels'
+  },
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Nos ingénieurs expérimentés interviennent en renfort de vos équipes pour vous apporter expertise technique et conseil stratégique tout au long de vos projets.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Assistance technique spécialisée',
+      description: 'Ingénieurs seniors disponibles en régie pour résoudre vos problèmes techniques complexes'
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Accompagnement projet sur mesure',
+      description: 'Méthodologie agile adaptée à vos besoins avec reporting régulier'
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Conseil stratégique',
+      description: 'Audit et recommandations pour l\'architecture technique de vos systèmes'
     },
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Renfort de compétences',
+      description: 'Mise à disposition d\'experts en technologies embarquées et IoT'
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Formation technique',
+      description: 'Transfert de compétences à vos équipes sur les technologies clés'
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
+      title: 'Veille technologique',
+      description: 'Actualisation permanente de vos systèmes avec les dernières innovations'
+    }
   ],
-  image: {
-    src: cameraBackImg,
-    alt: 'Colorful Image',
-  },
+  // image: {
+  //   src: technicalSupportImg, // À remplacer par une image d'ingénieurs en intervention
+  //   alt: 'Ingénieurs en support technique',
+  // },
   isReversed: true,
-  isAfterContent: true,
-  modelPath: "/glb1.glb"
-
+  isAfterContent: true
 };
 
 // Steps data on Home page *******************

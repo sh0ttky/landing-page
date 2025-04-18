@@ -42,7 +42,7 @@ export default function Page() {
       {/* <Features {...featuresHome} /> */}
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
-      <Steps {...stepsHome} />
+      {/* <Steps {...stepsHome} /> */}
 
       {/* <SocialProof {...socialProofHome} /> */}
       <CompaniezCarousel />

@@ -28,9 +28,9 @@ const Page = () => {
       <Features2 {...features2Services} />
       <Content {...contentServicesOne} />
       <Content {...contentServicesTwo} />
-      <Features4 {...features4Services} />
-      <Testimonials {...testimonialsServices} />
-      <FAQs {...faqsServices} />
+      {/* <Features4 {...features4Services} /> */}
+      {/* <Testimonials {...testimonialsServices} /> */}
+      {/* <FAQs {...faqsServices} /> */}
       <CallToAction {...callToActionServices} />
     </>
   );

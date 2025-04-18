@@ -42,9 +42,8 @@ export const hero2About: HeroProps = {
   subtitle:
     "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
     réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
-    l'Europe - notre entreprise allie expertise technique et approche multiculturelle pour répondre \
-    aux défis technologiques les plus exigeants. Avec plus de 8 ans d'expérience cumulée dans divers \
-    domaines de pointe, nos équipes pluridisciplinaires accompagnent les clients tout au long de leur projet.",
+    l'Europe - notre entreprise allie expertise technique et approche agile pour répondre \
+    aux défis technologiques les plus exigeants.",
   tagline: 'A propos',
   callToAction: {
     text: 'Nous rejoindre',
@@ -67,7 +66,8 @@ export const statsAbout: StatsProps = {
   hasBackground: true,
   items: [
     {
-      title: 'Depuis 2017',
+      title: '2017',
+      description: 'Depuis',
     },
     {
       title: 8,

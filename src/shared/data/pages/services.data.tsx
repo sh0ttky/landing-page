@@ -4,8 +4,14 @@ import {
   IconBulb,
   IconChevronsRight,
   IconComponents,
+  IconCpu,
+  IconFileAnalytics,
+  IconGauge,
+  IconHierarchy,
   IconListCheck,
   IconRocket,
+  IconTrendingUp,
+  IconZoomCheck,
 } from '@tabler/icons-react';
 
 import {
@@ -23,7 +29,7 @@ import cameraBackImg from '~/assets/images/camera-back.jpg';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Elevate your projects with our stunning templates',
+  title: 'Solutions clés en main pour vos projets',
   subtitle:
     'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
   callToAction: {
@@ -41,39 +47,39 @@ export const heroServices: HeroProps = {
 export const features2Services: FeaturesProps = {
   id: 'featuresTwo-on-services',
   header: {
-    title: 'Our Services',
+    title: 'Nos Services d\'Ingénierie',
+    subtitle: 'Des solutions complètes pour vos projets techniques'
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconBrandTailwind,
+      title: 'Rédaction de cahier des charges technique',
+      description: 'Notre équipe vous accompagne dans la formalisation précise de vos besoins techniques, fonctionnels et contraintes spécifiques.',
+      icon: IconFileAnalytics, // Icône plus adaptée
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconComponents,
+      title: 'Développement de produits sur mesure',
+      description: 'Conception et réalisation de systèmes embarqués clés en main, de l\'électronique au firmware.',
+      icon: IconCpu, // Icône représentant l'électronique
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconListCheck,
+      title: 'Audit technique et accompagnement',
+      description: 'Évaluation de vos équipes et processus avec recommandations pour optimiser vos développements matériels et logiciels.',
+      icon: IconZoomCheck, // Icône d'audit
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconRocket,
+      title: 'Optimisation des performances',
+      description: 'Analyse et amélioration des critères temps-réel, consommation énergétique et fiabilité de vos systèmes.',
+      icon: IconGauge, // Icône de performance
     },
     {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
+      title: 'Conseil en architecture technique',
+      description: 'Sélection des meilleures technologies (microcontrôleurs, protocoles) pour votre application.',
+      icon: IconHierarchy, // Icône d'architecture
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconBulb,
+      title: 'Veille technologique et innovation',
+      description: 'Intégration des dernières avancées en IoT, edge computing et intelligence embarquée.',
+      icon: IconTrendingUp, // Icône d'innovation
     },
   ],
 };
@@ -280,11 +286,11 @@ export const faqsServices: FAQsProps = {
 export const callToActionServices: CallToActionProps = {
   id: 'callToAction-on-services',
   hasBackground: false,
-  title: 'Still have questions?',
+  title: 'Besoin d\'un devis ?',
   subtitle:
-    'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in leo odio. Cras finibus ex a ante convallis ullamcorper.',
+    'Notre équipe d\'experts en systèmes embarqués est à votre disposition pour répondre à vos questions techniques et discuter de vos projets innovants.',
   callToAction: {
-    text: 'Contact us',
+    text: 'Contactez-nous',
     href: '/contact',
   },
 };

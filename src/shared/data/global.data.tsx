@@ -26,13 +26,17 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
- 
+
+    {
+      label: 'Accueil',
+      href: '/',
+    },
     {
       label: 'A propos',
       href: '/about',
     },
     {
-      label: 'Solutions',
+      label: 'Services',
       href: '/services',
     },
     {
@@ -43,7 +47,7 @@ export const headerData: HeaderProps = {
       label: 'Carrières',
       href: '/blog',
     },
- 
+
 
 
   ],

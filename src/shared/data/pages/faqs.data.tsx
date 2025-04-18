@@ -120,7 +120,7 @@ export const faqs4Faqs: FAQsProps = {
 export const callToActionFaqs: CallToActionProps = {
   id: 'callToAction-on-faqs',
   hasBackground: true,
-  title: 'Still have questions?',
+  title: 'Besoin d\'un devis ?',
   subtitle:
     'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in leo odio. Cras finibus ex a ante convallis ullamcorper.',
   callToAction: {
