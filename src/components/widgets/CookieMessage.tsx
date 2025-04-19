@@ -58,7 +58,7 @@ export default function CookieMessage({ variant = "default", demo = false, onAcc
                             <br />
                             <span className="text-xs">En cliquant sur "<span className="font-medium opacity-80">Accepter</span>", vous acceptez notre utilisation de vos cookies.</span>
                             <br />
-                            <a href="/cgu" className="text-xs underline">En savoir plus.</a>
+                            <a href="/terms" className="text-xs underline">En savoir plus.</a>
                         </p>
                     </div>
                     <div className="flex gap-2 p-4 py-5 border-t border-border dark:bg-background/20">
