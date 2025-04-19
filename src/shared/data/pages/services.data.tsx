@@ -194,7 +194,7 @@ export const contentServicesTwo: ContentProps = {
   //   src: usbSecurityDeviceImg, // À remplacer par une image du produit
   //   alt: 'Système de sécurité USB avec interface de gestion',
   // },
-  isReversed: true,
+  isReversed: false,
   isAfterContent: false,
 };
 
