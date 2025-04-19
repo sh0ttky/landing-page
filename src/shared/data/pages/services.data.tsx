@@ -87,30 +87,56 @@ export const features2Services: FeaturesProps = {
 // Content data on Services page *******************
 export const contentServicesOne: ContentProps = {
   id: 'contentOne-on-services-one',
+  header: {
+    title: "Banc de test extensible",
+    tagline: "Plateforme Modulaire d'Automatisation de Tests Industriels",
+    subtitle: "Solution tout-en-un pour la validation complète de vos systèmes embarqués"
+  },
   hasBackground: false,
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Notre plateforme de test modulaire intègre tous les instruments nécessaires pour valider vos produits électroniques, avec une architecture ouverte permettant des extensions futures.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Interface Homme-Machine Complète',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'IHM tactile avec :\n'
+        + '- Tableau de bord personnalisable\n'
+        + '- Visualisation des résultats en temps réel\n'
+        + '- Gestion des séquences de test\n'
+        + '- Rapports automatiques générables',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Modules d\'Extension Standards',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Connectivité multi-protocoles :\n'
+        + '- Bus industriels (Modbus RTU/TCP, CAN, CAN FD, PROFIBUS)\n'
+        + '- Réseaux (Ethernet, WiFi 6, Bluetooth 5.2, LoRa)\n'
+        + '- Entrées/Sorties (Numérique, Analogique, 4-20mA, 0-10V)\n'
+        + '- Puissance (230V AC, 48V DC, charges programmables)',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Système de Gestion des Tests',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Fonctionnalités avancées :\n'
+        + '- Base de données centralisée des résultats\n'
+        + '- Historique complet des campagnes de test\n'
+        + '- Analyse statistique (CP/CPK, Six Sigma)\n'
+        + '- Export vers Excel/LIMS/MES',
+    },
+    {
+      title: 'Environnement de Développement Intégré',
+      description:
+        'Outils pour ingénieurs :\n'
+        + '- Mode debug avec analyseur logique intégré\n'
+        + '- Scripting Python pour tests complexes\n'
+        + '- Simulation des défaillances\n'
+        + '- Injection de défauts protocolaires',
     },
   ],
-  image: {
-    src: cameraFrontImg,
-    alt: 'Colorful Image',
-  },
+  // image: {
+  //   src: testBenchSystemImg, // À remplacer par une image de votre banc
+  //   alt: 'Plateforme de test modulaire avec interfaces multiples',
+  // },
   isReversed: true,
   isAfterContent: false,
 };
@@ -118,35 +144,58 @@ export const contentServicesOne: ContentProps = {
 // Content data on Services page *******************
 export const contentServicesTwo: ContentProps = {
   id: 'contentOne-on-services-two',
+  header: {
+    title: "Système de Cybersécurité USB Guardian",
+    tagline: "Protection Avancée des Périphériques USB",
+    subtitle: "Solution de contrôle d'accès matériel pour une protection maximale contre les menaces USB"
+  },
   hasBackground: false,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Notre système breveté de blocage USB intelligent offre une protection proactive contre les menaces via les périphériques amovibles, tout en permettant un flux de travail sécurisé.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Filtrage Certificat-Based',
+      description:
+        'Fonctionnalités clés :\n'
+        + '- Autorise uniquement les périphériques signés numériquement\n'
+        + '- Liste blanche des fabricants certifiés\n'
+        + '- Vérification cryptographique en temps réel\n'
+        + '- Support des certificats X.509 et PKI',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Protection Multi-Couche',
+      description:
+        'Défenses avancées :\n'
+        + '- Détection des périphériques malveillants\n'
+        + '- Blocage des BadUSB et Rubber Ducky\n'
+        + '- Isolation des périphériques non autorisés\n'
+        + '- Journalisation complète des événements',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Gestion Centralisée',
+      description:
+        'Console d\'administration :\n'
+        + '- Dashboard de sécurité unifié\n'
+        + '- Politiques granulaires par groupe/utilisateur\n'
+        + '- Alertes temps réel sur tentatives non autorisées\n'
+        + '- Intégration SIEM (Splunk, QRadar)',
     },
     {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Flexibilité de Déploiement',
+      description:
+        'Options d\'implémentation :\n'
+        + '- Appliance réseau dédiée\n'
+        + '- Solution endpoint légère\n'
+        + '- Module pour pare-feu existants\n'
+        + '- Version industrielle (OT/IEC 62443)',
     },
   ],
-  image: {
-    src: cameraBackImg,
-    alt: 'Colorful Image',
-  },
-  isReversed: false,
-  isAfterContent: true,
+  // image: {
+  //   src: usbSecurityDeviceImg, // À remplacer par une image du produit
+  //   alt: 'Système de sécurité USB avec interface de gestion',
+  // },
+  isReversed: true,
+  isAfterContent: false,
 };
 
 // Feature4 data on Services page *******************
