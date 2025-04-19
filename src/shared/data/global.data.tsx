@@ -45,7 +45,7 @@ export const headerData: HeaderProps = {
     },
     {
       label: 'Carrières',
-      href: '/blog',
+      href: '/carrieres',
     },
 
 
@@ -162,7 +162,7 @@ export const footerData: FooterProps = {
         },
         {
           label: 'Careers',
-          href: '/',
+          href: '/carrieres',
         },
         {
           label: 'Press',
