@@ -1,7 +1,5 @@
 import { Resend } from 'resend';
-
-const resend = new Resend('re_gNJpeweV_8ogBEeyTz8hL3LS4PrhuXu1d');
-
+const resend = new Resend('input your resend api key here to test it');
 
 
 (async function () {
