@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Bonda from '~/components/widgets/Bonda';
 import CallToAction from '~/components/widgets/CallToAction';
 import Content from '~/components/widgets/Content';
 import FAQs from '~/components/widgets/FAQs';
@@ -25,6 +26,7 @@ const Page = () => {
   return (
     <>
       <Hero {...heroServices} />
+      <Bonda />
       <Features2 {...features2Services} />
       <Content {...contentServicesOne} />
       <Content {...contentServicesTwo} />

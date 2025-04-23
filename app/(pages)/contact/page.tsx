@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Bonda from '~/components/widgets/Bonda';
 
 import Contact2 from '~/components/widgets/Contact2';
 import Features2 from '~/components/widgets/Features2';
@@ -13,8 +14,9 @@ const Page = () => {
   return (
     <>
       <Hero {...heroContact} />
+      <Bonda />
       <Contact2 {...contact2Contact} />
-{/*   <Features2 {...features2Contact} />*/}   
+      {/*   <Features2 {...features2Contact} />*/}
     </>
   );
 };

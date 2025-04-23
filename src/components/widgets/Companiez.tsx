@@ -62,8 +62,8 @@ export function CompaniezCarousel() {
         Clients
       </p>
 
-      <p className="font-heading mb-4 px-4 font-bold text-4xl md:text-5xl text-center">
-        Ils nous font confiance
+      <p className="font-heading mb-4 px-4 font-bold text-md sm:text-2xl text-center">
+        On a travaillé avec
       </p>
 
       <Marquee className=" [--duration:20s]">

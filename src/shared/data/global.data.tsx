@@ -32,13 +32,14 @@ export const headerData: HeaderProps = {
       href: '/',
     },
     {
-      label: 'A propos',
-      href: '/about',
-    },
-    {
       label: 'Services',
       href: '/services',
     },
+    {
+      label: 'A propos',
+      href: '/about',
+    },
+
     {
       label: 'Actualités',
       href: '/blog',
@@ -68,6 +69,10 @@ export const headerData: HeaderProps = {
 export const footerData: FooterProps = {
   title: 'TailNext',
   links: [
+    {
+      label: '© MHTC - Embedded',
+
+    },
     {
       label: 'Conditions générales',
       href: '/terms',
@@ -211,6 +216,10 @@ export const footerData: FooterProps = {
 // Footer2 data
 export const footerData2: FooterProps = {
   links: [
+    {
+      label: '© MHTC - Embedded',
+      href: '/',
+    },
     {
       label: 'Conditions générales',
       href: '/terms',

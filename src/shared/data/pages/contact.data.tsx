@@ -47,19 +47,13 @@ export const contact2Contact: ContactProps = {
   form: {
     title: 'Prêt à démarrer votre projet ?',
     inputs: [
+
       {
         type: 'text',
-        label: 'Prénom',
-        name: 'name',
-        autocomplete: 'off',
-        placeholder: 'Votre prénom',
-      },
-      {
-        type: 'text',
-        label: 'Nom',
+        label: 'Nom complet',
         name: 'lastName',
         autocomplete: 'off',
-        placeholder: 'Votre nom',
+        placeholder: 'Votre nom et prénom',
       },
       {
         type: 'email',

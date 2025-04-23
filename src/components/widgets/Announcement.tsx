@@ -6,7 +6,7 @@ const Announcement = () => {
 
   return (
     <div className="hidden overflow-hidden text-ellipsis whitespace-nowrap border-b border-blue-900 bg-blue-900 px-3 py-2 text-sm text-gray-200 md:block">
-      <span className="bg-blue-800 py-0.5 px-1 text-xs font-semibold">{title}</span>{' '}
+      <span className="bg-blue-900 py-0.5 px-1 text-xs font-semibold">{title}</span>{' '}
       {callToAction && callToAction.text && callToAction.href && (
         <a
           href={callToAction.href}

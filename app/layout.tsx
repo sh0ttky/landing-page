@@ -7,11 +7,11 @@ import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
 import Footer2 from '~/components/widgets/Footer2';
 
-import { Space_Grotesk } from 'next/font/google';
+import { Albert_Sans, Archivo, Comfortaa, Dosis, Krub, Maven_Pro, Onest, Overpass, Red_Hat_Display, Sora, Space_Grotesk } from 'next/font/google';
 import '~/assets/styles/base.css';
 import CookieMessage from '~/components/widgets/CookieMessage';
 
-const customFont = Space_Grotesk({ subsets: ['latin'], variable: '--font-custom' });
+const customFont = Red_Hat_Display({ subsets: ['latin'], variable: '--font-custom', weight: "500" });
 
 export interface LayoutProps {
   children: React.ReactNode;

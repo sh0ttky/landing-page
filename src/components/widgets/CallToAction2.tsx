@@ -44,7 +44,7 @@ const Card = ({ title, description, href, form }: Item) => (
 );
 
 const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
-  <section className="bg-blue-800 text-gray-200" id="callToActionTwo">
+  <section className="bg-blue-900 text-gray-200" id="callToActionTwo">
     <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:pt-20">
       <div className="row-gap-10 grid gap-6 md:grid-cols-2">
         <div className="mx-auto md:my-auto md:ml-0 md:pb-6 md:pr-24">
@@ -54,7 +54,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
           </p>
         </div>
         <div className="relative -mb-6">
-        {/*{items &&
+          {/*{items &&
             items.map(({ title, description, href, form }, index) => (
               <div key={`call-to-action-item-${index}`}>
                 {href ? (
@@ -71,7 +71,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
                   <Card title={title} description={description} href={href} form={form} />
                 )}
               </div>
-            ))} */} 
+            ))} */}
         </div>
       </div>
     </div>

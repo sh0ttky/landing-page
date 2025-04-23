@@ -78,26 +78,6 @@ export default async function Home({ }) {
                 <p className="text-center text-gray-600 mb-12">Join our team and help build the future</p>
             </header>
 
-            <div className="mb-16">
-                <h2 className="text-2xl font-bold mb-6">Current Openings</h2>
-                <div className="grid grid-cols-1 gap-6 p-4 md:p-0 lg:grid-cols-2">
-                    {jobs.map(({ id, link, title, description, tags }) => (
-                        <div key={id} className="flex flex-col overflow-hidden rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <Link href={link} className="h-full p-6 flex flex-col">
-                                <h2 className="text-xl font-bold mb-2">{title}</h2>
-                                <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-                                <div className="flex flex-wrap gap-2">
-                                    {tags.map((tag, index) => (
-                                        <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
-            </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
                 <div className="mb-8">
@@ -154,6 +134,27 @@ export default async function Home({ }) {
                 <div id="apply" className="pt-8">
                     <h2 className="text-2xl font-bold mb-6">Apply for this position</h2>
                     <Contact2 {...contact2Contact} />
+                </div>
+            </div>
+
+            <div className="mt-16">
+                <h2 className="text-2xl font-bold mb-6">Current Openings</h2>
+                <div className="grid grid-cols-1 gap-6 p-4 md:p-0 lg:grid-cols-2">
+                    {jobs.map(({ id, link, title, description, tags }) => (
+                        <div key={id} className="flex flex-col overflow-hidden rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <Link href={link} className="h-full p-6 flex flex-col">
+                                <h2 className="text-xl font-bold mb-2">{title}</h2>
+                                <p className="text-gray-600 mb-4 flex-grow">{description}</p>
+                                <div className="flex flex-wrap gap-2">
+                                    {tags.map((tag, index) => (
+                                        <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </Link>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

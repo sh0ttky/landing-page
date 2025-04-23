@@ -1,5 +1,6 @@
 import {
   ContactProps,
+  ContentProps,
   FAQsProps,
   FeaturesProps,
   HeroProps,
@@ -70,8 +71,8 @@ export const statsAbout: StatsProps = {
       description: 'Depuis',
     },
     {
-      title: 8,
-      description: 'Ans',
+      title: 32,
+      description: 'Projets',
     },
     {
       title: 2,
@@ -89,21 +90,45 @@ export const statsAbout: StatsProps = {
 //     nous combinons rigueur industrielle et agilité locale pour servir des clients diversifiés, des startups aux grands \
 //     groupes, dans des secteurs aussi variés que l’IoT, la domotique, le ferroviaire ou les énergies renouvelables.
 // FeaturesFour data on About page *******************
-export const featuresFourAbout: FeaturesProps = {
+
+export const featuresFourAbout: ContentProps = {
   id: 'features-four-on-about',
-  hasBackground: false,
+  hasBackground: true,
   header: {
-    title: 'Notre coeur de métier',
-    subtitle:
-      'Proposer des solutions technologiques performantes et adaptées, alliant expertise technique et innovation, \
+    title: 'Conception au forfait',
+    subtitle: 'Du devis à la livraison, nous maîtrisons toute la chaîne de développement',
+    tagline: 'Expertise technique',
+  },
+  content:
+    'Proposer des solutions technologiques performantes et adaptées, alliant expertise technique et innovation, \
       pour répondre aux défis les plus exigeants. Que ce soit pour le développement de systèmes embarqués avancés, \
       la réalisation de projets électroniques complexes ou l’optimisation de solutions logicielles, notre équipe \
       s’engage à fournir un accompagnement personnalisé et des résultats d’excellence. Chez nous, la technologie \
       rencontre l’expertise pour construire l’innovation de demain. Faites confiance à des passionnés, choisissez \
-      l’excellence technique.',
-    tagline: 'Savoir faire',
-  },
+      l’excellence technique.', items: [
+    {
+      title: 'Système d’acquisition de données et de contrôle',
+
+    },
+    {
+      title: 'Bancs de test automatisés',
+
+    },
+    {
+      title: 'Systèmes embarqués',
+
+    },
+
+  ],
+  isReversed: true,
+  isAfterContent: false,
+  image: {
+    src: '/aboutuz.png',
+    alt: 'azrezr'
+
+  }
 };
+
 
 // FeaturesFour data on About page (Two) *******************
 export const featuresFourAboutTwo: FeaturesProps = {

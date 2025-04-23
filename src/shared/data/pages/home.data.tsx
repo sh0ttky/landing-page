@@ -208,7 +208,12 @@ export const contentHomeOne: ContentProps = {
     },
   ],
   isReversed: false,
-  isAfterContent: false
+  isAfterContent: false,
+  image: {
+    src: '/aboutuz.png',
+    alt: 'azrezr'
+
+  }
 };
 
 // Content data on Home page *******************
@@ -224,34 +229,28 @@ export const contentHomeTwo: ContentProps = {
     'Nos ingénieurs expérimentés interviennent en renfort de vos équipes pour vous apporter expertise technique et conseil stratégique tout au long de vos projets.',
   items: [
     {
-      title: 'Assistance technique spécialisée',
-      description: 'Ingénieurs seniors disponibles en régie pour résoudre vos problèmes techniques complexes'
+      title: 'Support technique expert',
+      description: 'Ingénieurs seniors en régie pour résoudre vos défis complexes et renforcer vos équipes en technologies embarquées & IoT.'
     },
     {
-      title: 'Accompagnement projet sur mesure',
-      description: 'Méthodologie agile adaptée à vos besoins avec reporting régulier'
+      title: 'Accompagnement projet agile',
+      description: 'Méthodologie sur mesure avec reporting régulier et conseils stratégiques pour optimiser votre architecture système.'
     },
     {
-      title: 'Conseil stratégique',
-      description: 'Audit et recommandations pour l\'architecture technique de vos systèmes'
+      title: 'Formation & montée en compétences',
+      description: 'Transfert de savoir-faire sur les technologies clés et veille technologique pour maintenir vos systèmes à la pointe.'
     },
     {
-      title: 'Renfort de compétences',
-      description: 'Mise à disposition d\'experts en technologies embarquées et IoT'
+      title: 'Innovation & audit technique',
+      description: 'Recommandations stratégiques et intégration des dernières innovations pour sécuriser vos projets futurs.'
     },
-    {
-      title: 'Formation technique',
-      description: 'Transfert de compétences à vos équipes sur les technologies clés'
-    },
-    {
-      title: 'Veille technologique',
-      description: 'Actualisation permanente de vos systèmes avec les dernières innovations'
-    }
+
   ],
-  // image: {
-  //   src: technicalSupportImg, // À remplacer par une image d'ingénieurs en intervention
-  //   alt: 'Ingénieurs en support technique',
-  // },
+  image: {
+    src: '/aboutuz.png',
+    alt: 'azrezr'
+
+  },
   isReversed: true,
   isAfterContent: true
 };
