@@ -85,6 +85,17 @@ export const BlogSection: HeroProps = {
   },
 };
 
+export const SpontaneSection: FeaturesProps = {
+  id: 'Spontane',
+  header: {
+    title: `Vous n'avez pas trouvé l'offre de vos rêves ?`,
+    subtitle: 'Aucune des missions que nous proposons actuellement ne correspond à vos attentes ? Cela ne sera peut-être plus le cas demain ! Avec notre croissance, peut-être même sommes nous déjà en train de réfléchir à cette offre dont vous rêvez ! Nous vous recommandons donc de déposer votre CV pour que nous puissions prendre contact avec vous !'
+  },
+  callToAction2: {
+    text: `Candidature spontanée`,
+    href: '/contact',
+  },
+};
 
 
 export const CareerSection: HeroProps = {

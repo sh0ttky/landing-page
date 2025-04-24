@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Bonda from '~/components/widgets/Bonda';
 import Hero from '~/components/widgets/Hero';
-import { CareerSection } from '~/shared/data/pages/about.data';
+import Spontane from '~/components/widgets/Spontane';
+import { CareerSection, SpontaneSection } from '~/shared/data/pages/about.data';
+import { features2Services } from '~/shared/data/pages/services.data';
 
 export const metadata: Metadata = {
   title: 'Carrières',
@@ -71,6 +73,9 @@ export default async function Home({ }) {
             </div>
           ))}
         </div>
-      </section></>
+
+
+      </section>
+      <Spontane {...SpontaneSection} /></>
   );
 }
