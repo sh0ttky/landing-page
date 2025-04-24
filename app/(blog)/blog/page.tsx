@@ -27,7 +27,7 @@ export default async function Home({ }) {
         </header>
         <div className="grid grid-cols-1 gap-6  p-4 md:p-0 lg:grid-cols-2">
           {posts.map(({ slug, title, image }: { slug: string, title: string, image: string }) => (
-            <div key={slug} className="flex flex-col overflow-hidden rounded-xl border border-gray-200 shadow-lg">
+            <div key={slug} className="flex flex-col overflow-hidden border bg-gray-100 p-6 hover:shadow-sm transition-all duration-300 ease-in-out   border-gray-200 ">
               <Link href={`/${slug}`}>
                 <Image width={650} height={340} alt={title} src={`${image}`} />
                 <h2 className="p-4 font-bold">{title}</h2>

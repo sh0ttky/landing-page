@@ -31,11 +31,15 @@ import cameraBackImg from '~/assets/images/camera-back.jpg';
 export const heroServices: HeroProps = {
   title: 'Solutions clés en main pour vos projets',
   subtitle:
-    'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
+    `Conception sur mesure, de l'idée à la réalisation, on vous accompagne sur tout le cycle de projet.`,
   callToAction: {
     text: 'Start Exploring',
     href: 'https://github.com/onwidget/tailnext',
     targetBlank: true,
+  },
+  callToAction2: {
+    text: 'Nous contacter',
+    href: '/contact',
   },
   image: {
     src: heroImg,

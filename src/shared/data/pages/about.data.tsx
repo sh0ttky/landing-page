@@ -41,11 +41,12 @@ import {
 export const hero2About: HeroProps = {
   title: 'Qui sommes-nous ?',
   subtitle:
-    "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
-    réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
-    l'Europe - notre entreprise allie expertise technique et approche agile pour répondre \
-    aux défis technologiques les plus exigeants.",
-  tagline: 'A propos',
+    // "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
+    // réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
+    // l'Europe - notre entreprise allie expertise technique et approche agile pour répondre \
+    // aux défis technologiques les plus exigeants.",
+    "MHTC, fondée en 2017, Avec une présence en Afrique et en Europe, nous combinons expertise technique et agilité pour relever vos défis.",
+
   callToAction: {
     text: 'Nous rejoindre',
     href: 'https://www.linkedin.com/',
@@ -60,6 +61,53 @@ export const hero2About: HeroProps = {
     alt: 'Hero TailNext',
   },
 };
+
+
+
+export const BlogSection: HeroProps = {
+  title: 'Rejoignez-nous !',
+  subtitle:
+
+    "Rejoignez une équipe en croissance, où l'innovation rencontre l'expertise.",
+
+  callToAction: {
+    text: 'Nous rejoindre',
+    href: 'https://www.linkedin.com/',
+    targetBlank: true,
+  },
+  callToAction2: {
+    text: `Nous offres d'emploi`,
+    href: '/contact',
+  },
+  image: {
+    src: hero2Img,
+    alt: 'Hero TailNext',
+  },
+};
+
+
+
+export const CareerSection: HeroProps = {
+  title: 'Rejoignez-nous !',
+  subtitle:
+
+    "Rejoignez une équipe en croissance, où l'innovation rencontre l'expertise.",
+
+  callToAction: {
+    text: 'Nous rejoindre',
+    href: 'https://www.linkedin.com/',
+    targetBlank: true,
+  },
+  callToAction2: {
+    text: `Nous offres d'emploi`,
+    href: '/contact',
+  },
+  image: {
+    src: hero2Img,
+    alt: 'Hero TailNext',
+  },
+};
+
 
 // Stats data on About page *******************
 export const statsAbout: StatsProps = {
@@ -105,7 +153,8 @@ export const featuresFourAbout: ContentProps = {
       la réalisation de projets électroniques complexes ou l’optimisation de solutions logicielles, notre équipe \
       s’engage à fournir un accompagnement personnalisé et des résultats d’excellence. Chez nous, la technologie \
       rencontre l’expertise pour construire l’innovation de demain. Faites confiance à des passionnés, choisissez \
-      l’excellence technique.', items: [
+      l’excellence technique.',
+  items: [
     {
       title: 'Système d’acquisition de données et de contrôle',
 
