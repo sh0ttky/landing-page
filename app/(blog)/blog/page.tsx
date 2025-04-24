@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Bonda from '~/components/widgets/Bonda';
 import Contact2 from '~/components/widgets/Contact2';
 import Hero from '~/components/widgets/Hero';
+import { BlogSection } from '~/shared/data/pages/about.data';
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 
 import { findLatestPosts } from '~/utils/posts';
@@ -17,7 +18,7 @@ export default async function Home({ }) {
   const posts = await findLatestPosts();
   return (
 
-    <><Hero />
+    <><Hero {...BlogSection} />
       <Bonda />
       <section className="mx-auto min-h-screen max-w-3xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
         <header>

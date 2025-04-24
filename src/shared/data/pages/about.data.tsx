@@ -65,10 +65,10 @@ export const hero2About: HeroProps = {
 
 
 export const BlogSection: HeroProps = {
-  title: 'Rejoignez-nous !',
+  title: 'Actualitééé !',
   subtitle:
 
-    "Rejoignez une équipe en croissance, où l'innovation rencontre l'expertise.",
+    "Hak jdid.",
 
   callToAction: {
     text: 'Nous rejoindre',
