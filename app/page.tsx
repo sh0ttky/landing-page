@@ -29,6 +29,10 @@ import {
 } from '~/shared/data/pages/home.data';
 import Hero2 from '~/components/widgets/Hero2';
 import { CompaniezCarousel } from '~/components/widgets/Companiez';
+import Bonda from '~/components/widgets/Bonda';
+import Contact2 from '~/components/widgets/Contact2';
+import { contact2Contact } from '~/shared/data/pages/contact.data';
+import Content2 from '~/components/widgets/Content2';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -38,10 +42,10 @@ export default function Page() {
   return (
     <>
       <Hero2 {...heroHome} />
-
+      <Bonda />
       {/* <Features {...featuresHome} /> */}
       <Content {...contentHomeOne} />
-      <Content {...contentHomeTwo} />
+      <Content2 {...contentHomeTwo} />
       {/* <Steps {...stepsHome} /> */}
 
       {/* <SocialProof {...socialProofHome} /> */}
@@ -51,7 +55,7 @@ export default function Page() {
       {/* <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
       <Team {...teamHome} />*/}
-      <Contact {...contactHome} />
+      <Contact2 {...contact2Contact} />
       {/* <CallToAction2 {...callToAction2Home} /> */}
     </>
   );

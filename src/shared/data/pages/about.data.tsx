@@ -1,5 +1,6 @@
 import {
   ContactProps,
+  ContentProps,
   FAQsProps,
   FeaturesProps,
   HeroProps,
@@ -40,11 +41,12 @@ import {
 export const hero2About: HeroProps = {
   title: 'Qui sommes-nous ?',
   subtitle:
-    "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
-    réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
-    l'Europe - notre entreprise allie expertise technique et approche agile pour répondre \
-    aux défis technologiques les plus exigeants.",
-  tagline: 'A propos',
+    // "Fondée en 2017 par une équipe d'ingénieurs, MHTC s'est progressivement construite une solide \
+    // réputation dans la conception de solutions high-tech innovantes. Implantée sur deux continents - l'Afrique et \
+    // l'Europe - notre entreprise allie expertise technique et approche agile pour répondre \
+    // aux défis technologiques les plus exigeants.",
+    "MHTC, fondée en 2017, Avec une présence en Afrique et en Europe, nous combinons expertise technique et agilité pour relever vos défis.",
+
   callToAction: {
     text: 'Nous rejoindre',
     href: 'https://www.linkedin.com/',
@@ -60,6 +62,64 @@ export const hero2About: HeroProps = {
   },
 };
 
+
+
+export const BlogSection: HeroProps = {
+  title: 'Actualitééé !',
+  subtitle:
+
+    "Hak jdid.",
+
+  callToAction: {
+    text: 'Nous rejoindre',
+    href: 'https://www.linkedin.com/',
+    targetBlank: true,
+  },
+  callToAction2: {
+    text: `Nous offres d'emploi`,
+    href: '/contact',
+  },
+  image: {
+    src: hero2Img,
+    alt: 'Hero TailNext',
+  },
+};
+
+export const SpontaneSection: FeaturesProps = {
+  id: 'Spontane',
+  header: {
+    title: `Vous n'avez pas trouvé l'offre de vos rêves ?`,
+    subtitle: 'Aucune des missions que nous proposons actuellement ne correspond à vos attentes ? Cela ne sera peut-être plus le cas demain ! Avec notre croissance, peut-être même sommes nous déjà en train de réfléchir à cette offre dont vous rêvez ! Nous vous recommandons donc de déposer votre CV pour que nous puissions prendre contact avec vous !'
+  },
+  callToAction2: {
+    text: `Candidature spontanée`,
+    href: '/contact',
+  },
+};
+
+
+export const CareerSection: HeroProps = {
+  title: 'Rejoignez-nous !',
+  subtitle:
+
+    "Rejoignez une équipe en croissance, où l'innovation rencontre l'expertise.",
+
+  callToAction: {
+    text: 'Nous rejoindre',
+    href: 'https://www.linkedin.com/',
+    targetBlank: true,
+  },
+  callToAction2: {
+    text: `Nous offres d'emploi`,
+    href: '/contact',
+  },
+  image: {
+    src: hero2Img,
+    alt: 'Hero TailNext',
+  },
+};
+
+
 // Stats data on About page *******************
 export const statsAbout: StatsProps = {
   id: 'stats-on-about',
@@ -70,8 +130,8 @@ export const statsAbout: StatsProps = {
       description: 'Depuis',
     },
     {
-      title: 8,
-      description: 'Ans',
+      title: 32,
+      description: 'Projets',
     },
     {
       title: 2,
@@ -89,21 +149,46 @@ export const statsAbout: StatsProps = {
 //     nous combinons rigueur industrielle et agilité locale pour servir des clients diversifiés, des startups aux grands \
 //     groupes, dans des secteurs aussi variés que l’IoT, la domotique, le ferroviaire ou les énergies renouvelables.
 // FeaturesFour data on About page *******************
-export const featuresFourAbout: FeaturesProps = {
+
+export const featuresFourAbout: ContentProps = {
   id: 'features-four-on-about',
-  hasBackground: false,
+  hasBackground: true,
   header: {
-    title: 'Notre coeur de métier',
-    subtitle:
-      'Proposer des solutions technologiques performantes et adaptées, alliant expertise technique et innovation, \
+    title: 'Conception au forfait',
+    subtitle: 'Du devis à la livraison, nous maîtrisons toute la chaîne de développement',
+    tagline: 'Expertise technique',
+  },
+  content:
+    'Proposer des solutions technologiques performantes et adaptées, alliant expertise technique et innovation, \
       pour répondre aux défis les plus exigeants. Que ce soit pour le développement de systèmes embarqués avancés, \
       la réalisation de projets électroniques complexes ou l’optimisation de solutions logicielles, notre équipe \
       s’engage à fournir un accompagnement personnalisé et des résultats d’excellence. Chez nous, la technologie \
       rencontre l’expertise pour construire l’innovation de demain. Faites confiance à des passionnés, choisissez \
       l’excellence technique.',
-    tagline: 'Savoir faire',
-  },
+  items: [
+    {
+      title: 'Système d’acquisition de données et de contrôle',
+
+    },
+    {
+      title: 'Bancs de test automatisés',
+
+    },
+    {
+      title: 'Systèmes embarqués',
+
+    },
+
+  ],
+  isReversed: true,
+  isAfterContent: false,
+  image: {
+    src: '/aboutuz.png',
+    alt: 'azrezr'
+
+  }
 };
+
 
 // FeaturesFour data on About page (Two) *******************
 export const featuresFourAboutTwo: FeaturesProps = {

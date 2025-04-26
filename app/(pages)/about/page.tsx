@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
+import Bonda from '~/components/widgets/Bonda';
 import Contact from '~/components/widgets/Contact';
+import Contact2 from '~/components/widgets/Contact2';
+import Content from '~/components/widgets/Content';
 
 import FAQs from '~/components/widgets/FAQs';
 import Features from '~/components/widgets/Features';
 import Features3 from '~/components/widgets/Features3';
 import Features4 from '~/components/widgets/Features4';
 import Hero2 from '~/components/widgets/Hero2';
-import Partners from '~/components/widgets/Partners';
+import { PartnerzCarousel } from '~/components/widgets/Partners';
 import Stats from '~/components/widgets/Stats';
 import Steps from '~/components/widgets/Steps';
 import Team2 from '~/components/widgets/Team2';
@@ -22,17 +25,22 @@ import {
   stepsAbout,
   testimonials2About,
 } from '~/shared/data/pages/about.data';
+import { contact2Contact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
-  title: `About us`,
+  title: `A propos`,
 };
 
 const Page = () => {
   return (
     <>
       <Hero2 {...hero2About} />
+      <Bonda />
       <Stats {...statsAbout} />
-      <Features4 {...featuresFourAbout} />
+      <Content {...featuresFourAbout} />
+
+
+      {/* <Features4 {...featuresFourAbout} /> */}
       <Features4 {...featuresFourAboutTwo} />
       <Steps {...stepsAbout} />
       <Features3 {...features3About} />
@@ -40,8 +48,8 @@ const Page = () => {
       {/* <Team2 {...teamAbout} /> */}
       {/* <Testimonials2 {...testimonials2About} /> */}
       <FAQs {...faqsAbout} />
-      <Partners />
-      <Contact {...contactAbout} />
+      <PartnerzCarousel />
+      <Contact2 {...contact2Contact} />
     </>
   );
 };

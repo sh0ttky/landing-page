@@ -96,7 +96,7 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-blue-800 dark:hover:text-white"
+                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-blue-900 dark:hover:text-white"
                         onClick={() => handleDropdownOnClick(index)}
                       >
                         {label}{' '}
@@ -114,7 +114,7 @@ const Header = () => {
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:text-blue-800"
+                              className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:text-blue-900"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -128,7 +128,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-blue-800 dark:hover:text-white"
+                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-blue-900 dark:hover:text-white"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
@@ -146,7 +146,7 @@ const Header = () => {
           <div className="flex w-full items-center justify-between md:w-auto">
             {showRssFeed && (
               <Link
-                className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm transition duration-150 ease-in-out hover:text-blue-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm transition duration-150 ease-in-out hover:text-blue-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                 aria-label="RSS Feed"
                 href=""
               >
@@ -159,7 +159,7 @@ const Header = () => {
                   <CTA
                     key={`item-action-${index}`}
                     callToAction={callToAction as CallToActionType}
-                    linkClass=" bg-blue-800 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
+                    linkClass=" bg-blue-900 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
                   />
                 ))}
               </div>

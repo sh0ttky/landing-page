@@ -272,6 +272,8 @@ type FeaturesProps = Widget & {
   columns?: 1 | 2 | 3;
   /** Do you want the image to be displayed? */
   isImageDisplayed?: boolean;
+  callToAction2?: CallToActionType;
+
   image?: Image;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;

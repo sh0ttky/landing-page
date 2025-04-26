@@ -5,7 +5,7 @@ const Headline = ({ header, containerClass, titleClass, subtitleClass }: Headlin
   const { title, subtitle, tagline, position } = header;
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 gap-6 ">
       {(title || subtitle || tagline) && (
         <div
           className={twMerge(
@@ -23,7 +23,7 @@ const Headline = ({ header, containerClass, titleClass, subtitleClass }: Headlin
           {subtitle && (
             <p
               className={twMerge(
-                `mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400 ${position === 'left' ? 'text-left ml-0' : position === 'right' ? 'text-right mr-0' : 'text-center'
+                `mx-auto mt-4 max-w-3xl text-lg text-gray-300 dark:text-slate-400 ${position === 'left' ? 'text-left ml-0' : position === 'right' ? 'text-right mr-0' : 'text-center'
                 }`,
                 subtitleClass,
               )}

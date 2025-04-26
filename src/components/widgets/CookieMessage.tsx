@@ -62,7 +62,7 @@ export default function CookieMessage({ variant = "default", demo = false, onAcc
                         </p>
                     </div>
                     <div className="flex gap-2 p-4 py-5 border-t border-border dark:bg-background/20">
-                        <button onClick={accept} className="  bg-blue-800 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
+                        <button onClick={accept} className="  bg-blue-900 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
                         >Accepter</button>
                         <button onClick={decline} className="  bg-gray-200 text-black m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
                         >Refuser</button>

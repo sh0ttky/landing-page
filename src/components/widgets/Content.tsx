@@ -22,39 +22,60 @@ const Content = ({
   <WidgetWrapper
     id={id ? id : ''}
     hasBackground={hasBackground}
-    containerClass={`${isAfterContent ? 'py-0 md:py-0 lg:py-0 pb-12 md:pb-16 lg:pb-20' : ''}`}
+    containerClass={`${isAfterContent ? 'py-0 md:py-1 bg-gray-50 lg:py-1 pb-6 md:pb-6 lg:pb-10' : ''}`}
   >
-    {header && <Headline header={header} titleClass="text-3xl sm:text-5xl" />}
+    {header && <Headline header={header} titleClass="text-md sm:text-2xl" />}
     <div className="mx-auto max-w-7xl">
-      <div className={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
+      <div className={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-4`}>
         <div className="self-center md:basis-1/2">
-          {content && <div className="mb-8 lg:mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</div>}
+          {content && <div className="mb-1 lg:mb-2 text-md text-gray-600 dark:text-slate-400">{content}</div>}
           <ItemGrid
             items={items}
             columns={1}
             defaultIcon={IconCheck}
-            containerClass="gap-4 md:gap-y-6"
+            containerClass="gap-1 md:gap-y-1"
             panelClass="flex max-w-full"
-            titleClass="text-lg font-medium leading-6 text-gray-900 dark:text-white mt-1 mb-2"
+            titleClass="text-md font-medium leading-3 text-gray-900 dark:text-white mt-1 mb-2"
             descriptionClass="mt-1 text-gray-600 dark:text-slate-400"
-            iconClass="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-foreground text-gray-50 mr-4 rtl:mr-0 rtl:ml-4 mt-1 p-1"
+            iconClass="flex-shrink-0 w-4 h-4 flex items-center justify-center rounded-full bg-blue-900 text-white font-bold mr-4 rtl:mr-0 rtl:ml-4 mt-1 p-1"
           />
         </div>
-        <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
+        <div aria-hidden="true" className="m-auto">
           {image && (
-            <div className="relative m-auto max-w-4xl">
-              {/* <Image
-                className="mx-auto w-full rounded-lg shadow-lg bg-gray-400 dark:bg-slate-700"
-                src={image.src}
-                width={828}
-                height={828}
-                alt={image.alt}
-                sizes="(max-width: 768px) 100vw, 432px"
-                placeholder="blur"
-                quality={50}
-              /> */}
-              <ModelViewer modelPath={modelPath!} />
-            </div>
+            <><div className="m-auto max-w-4xl hover:animate-out relative">
+              {/* Main Image */}
+              <Image
+                className="m-auto rounded-t-sm  bg-gray-400 dark:bg-slate-700"
+                src={"/picz/4.png"}
+                width={750}
+                height={950}
+                alt={"/picz/2.png"}
+                sizes=""
+                quality={100} />
+
+              {/* Rectangle with Random Text */}
+
+            </div><div className="m-auto max-w-4xl relative">
+                {/* Main Image */}
+                <Image
+                  className="m-auto rounded-b-sm  bg-gray-400 dark:bg-slate-700"
+                  src={"/picz/6.png"}
+                  width={750}
+                  height={950}
+                  alt={"/picz/2.png"}
+                  sizes=""
+                  quality={100} />
+
+                {/* Rectangle with Random Text */}
+                <div className="absolute bottom-0 left-0 right-0 bg-blue-900 bg-opacity-70 text-white p-4 rounded-b-lg">
+                  <p className="text-center text-xl font-bold">
+
+                    Des solutions pour le test et la mesure     </p>
+                  <p className="text-center text-md ">
+
+                    Plus de 7 ans d'experience     </p>
+                </div>
+              </div></>
           )}
         </div>
       </div>
