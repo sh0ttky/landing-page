@@ -11,28 +11,7 @@ export const metadata: Metadata = {
 const jobs = [
   {
     id: 1,
-    link: "carrieres/frontend-engineer",
-    title: "Ingénieur Frontend",
-    description: "Rejoignez notre équipe pour développer des interfaces utilisateur élégantes et réactives avec React et Next.js.",
-    tags: ["Ingénierie", "Frontend", "React"]
-  },
-  {
-    id: 2,
-    link: "carrieres/sales-manager",
-    title: "Responsable Commercial",
-    description: "Menez notre équipe commerciale et stimulez la croissance de l'entreprise grâce à des partenariats stratégiques.",
-    tags: ["Ventes", "Management", "Business"]
-  },
-  {
-    id: 3,
-    link: "carrieres/backend-developer",
-    title: "Développeur Backend",
-    description: "Concevez et implémentez des services backend évolutifs avec Node.js et PostgreSQL.",
-    tags: ["Ingénierie", "Backend", "Node.js"]
-  },
-  {
-    id: 4,
-    link: "carrieres/embedded-engineer",
+    link: "carrieres/ee-f47ac10b-58cc-4372-a567-0e02b2c3d479",
     title: "Ingénieur embarqué",
     description: "Designer des systemes embarqués en C++ et C.",
     tags: ["Ingénierie", "Embarqué", "C++/C"]

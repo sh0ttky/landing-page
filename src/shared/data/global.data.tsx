@@ -41,7 +41,7 @@ export const headerData: HeaderProps = {
     },
 
     {
-      label: 'Actualités',
+      label: 'Articles',
       href: '/blog',
     },
     {
@@ -72,15 +72,7 @@ export const footerData: FooterProps = {
     {
       label: '© MHTC - Embedded',
 
-    },
-    {
-      label: 'Conditions générales',
-      href: '/terms',
-    },
-    {
-      label: 'Politique de confidentialité',
-      href: '/privacy',
-    },
+    }
   ],
   columns: [
     {
@@ -219,15 +211,7 @@ export const footerData2: FooterProps = {
     {
       label: '© MHTC - Embedded',
       href: '/',
-    },
-    {
-      label: 'Conditions générales',
-      href: '/terms',
-    },
-    {
-      label: 'Politique de confidentialité',
-      href: '/privacy',
-    },
+    }
   ],
   columns: [
     {
