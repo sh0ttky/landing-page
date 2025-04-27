@@ -4,8 +4,8 @@ import ItemGrid from '../common/ItemGrid';
 import CTA from '../common/CTA';
 
 const Spontane = ({ header, items, columns = 3, id, callToAction2 }: FeaturesProps) => (
-    <section className="flex flex-col  mx-auto py-12 md:py-16 lg:py-20" id="features2">
-        <div className="pointer-events-none absolute inset-0 mb-36 bg-foreground-50 dark:bg-slate-800"></div>
+    <section className="flex flex-col bg-gray-50 mx-auto py-12 md:py-16 lg:py-20" id="features2">
+        <div className="pointer-events-none absolute inset-0 mb-36  dark:bg-slate-800"></div>
         <div className="relative mx-auto -mb-12 max-w-6xl  px-4 sm:px-6">
             {header && <Headline header={header} titleClass="text-4xl md:text-5xl" />}
             <ItemGrid

@@ -49,22 +49,22 @@ export default async function Home({ }) {
 
     <><Hero {...CareerSection} />
       <Bonda />
-      <section className="mx-auto min-h-screen max-w-3xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
+      <section className="mx-auto min-h-screen  bg-gray-50 px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
         <header>
           <h1 className="leading-tighter font-heading mb-6 text-center text-4xl font-bold tracking-tighter md:mb-16 md:text-5xl">
             Nos offres d'emplois
           </h1>
           <p className="text-center text-gray-600 mb-12">Faites partie de notre équipe</p>
         </header>
-        <div className="flex flex-col gap-6 p-4 md:p-0 lg:grid-cols-2">
+        <div className="flex max-w-3xl  mx-auto  flex-col gap-6 p-4 md:p-0 lg:grid-cols-2">
           {jobs.map(({ id, link, title, description, tags }) => (
-            <div key={id} className="flex flex-col overflow-hidden border bg-gray-100 p-6 hover:shadow-sm transition-all duration-300 ease-in-out  border-gray-200 ">
+            <div key={id} className="flex flex-col overflow-hidden border bg-gray-100 p-6 hover:shadow-lg  border-gray-200 ">
               <Link href={link} className="h-full p-6 flex flex-col">
                 <h2 className="text-xl font-bold mb-2">{title}</h2>
                 <p className="text-gray-600 mb-4 flex-grow">{description}</p>
                 <div className="flex flex-wrap gap-2">
                   {tags.map((tag, index) => (
-                    <span key={index} className="px-3 py-1 border  bg-gray-200 text-gray-800 text-sm rounded-full">
+                    <span key={index} className="px-3 py-1 border  bg-blue-800 text-white border-blue-900 text-sm rounded-full">
                       {tag}
                     </span>
                   ))}

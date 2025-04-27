@@ -59,7 +59,7 @@ const Logoz = ({
 export function PartnerzCarousel() {
     return (
 
-        <div className="relative flex w-full flex-col my-auto items-center justify-center overflow-hidden">
+        <div className="relative flex w-full flex-col bg-gray-50 my-auto items-center justify-center overflow-hidden">
 
             <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
                 Partenaires
