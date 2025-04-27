@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import CandidatureForm from '~/components/widgets/CandidatureForm';
 import Contact2 from '~/components/widgets/Contact2';
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 
@@ -12,41 +11,41 @@ export const metadata: Metadata = {
 const jobs = [
   {
     id: 1,
-    link: "carrieres/ee-f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    title: "Ingénieur embarqué",
-    description: "Designer des systemes embarqués en C++ et C.",
-    tags: ["Ingénierie", "Embarqué", "C++/C"]
+    link: "carrieres/fe-550e8400-e29b-41d4-a716-446655440000",
+    title: "Ingénieur Frontend",
+    description: "Rejoignez notre équipe pour développer des interfaces utilisateur élégantes et réactives avec React et Next.js.",
+    tags: ["Ingénierie", "Frontend", "React"]
   }
 ];
 
-const frontendEngineerJob = {
-  title: "Ingénieur Frontend",
+const embeddedEngineerJob = {
+  title: "Ingénieur Embarqué",
   location: "Full remote (GMT+1)",
   type: "Temps plein",
   department: "Ingénierie",
   description: [
-    "Nous recherchons un Ingénieur Frontend compétent pour rejoindre notre équipe en croissance. \
-    Vous serez responsable de la construction et de la maintenance de nos applications web en \
-    utilisant des technologies modernes comme React, Next.js et TypeScript.",
-    "En tant que membre de notre équipe d'ingénierie, vous collaborerez avec les designers, \
-    chefs de produit et ingénieurs backend pour offrir des expériences utilisateur exceptionnelles."
+    "Nous recherchons un Ingénieur Embarqué talentueux pour rejoindre notre équipe en pleine expansion. " +
+    "Vous serez responsable du développement et de l'optimisation de nos systèmes embarqués en utilisant " +
+    "des technologies comme C, C++ et RTOS.",
+    "En tant que membre clé de notre équipe d'ingénierie, vous collaborerez avec les architectes système, " +
+    "les ingénieurs hardware et les équipes produit pour concevoir des solutions embarquées performantes et fiables."
   ],
   responsibilities: [
-    "Développer de nouvelles fonctionnalités frontend avec React.js et Next.js",
-    "Créer des composants et bibliothèques réutilisables pour un usage futur",
-    "Traduire les maquettes et wireframes en code de haute qualité",
-    "Optimiser les composants pour des performances maximales sur tous les appareils et navigateurs",
-    "Collaborer avec les ingénieurs backend pour intégrer les APIs",
-    "Participer aux revues de code et contribuer aux discussions techniques"
+    "Développer et maintenir des logiciels embarqués en C/C++ pour nos produits",
+    "Concevoir et optimiser des drivers pour périphériques matériels",
+    "Mettre en œuvre des protocoles de communication (UART, SPI, I2C, CAN, etc.)",
+    "Travailler avec des systèmes temps réel (RTOS) et des microcontrôleurs",
+    "Collaborer avec les ingénieurs hardware pour le débogage et l'intégration système",
+    "Participer aux revues de code et contribuer à l'amélioration des processus de développement"
   ],
   requirements: [
-    "3+ ans d'expérience avec les frameworks JavaScript modernes (React, Angular ou Vue)",
-    "Maîtrise approfondie de JavaScript/TypeScript, HTML5 et CSS3",
-    "Expérience avec Next.js ou des frameworks SSR similaires",
-    "Connaissance des APIs RESTful et GraphQL",
-    "Maîtrise des mécanismes d'autorisation modernes (JWT, OAuth)",
-    "Expérience avec les outils de développement frontend courants (Webpack, Babel, NPM, etc.)",
-    "Connaissance des outils de gestion de versions (Git)"
+    "3+ ans d'expérience en développement embarqué",
+    "Maîtrise approfondie du C/C++ pour systèmes embarqués",
+    "Expérience avec les architectures ARM Cortex et/ou RISC-V",
+    "Connaissance des protocoles de communication embarqués",
+    "Expérience avec les outils de débogage (JTAG, oscilloscopes, analyseurs logiques)",
+    "Familiarité avec les systèmes temps réel (FreeRTOS, Zephyr, etc.)",
+    "Connaissance des outils de gestion de versions (Git) et de CI/CD pour l'embarqué"
   ]
 };
 
@@ -62,13 +61,13 @@ export default async function Home({ }) {
 
       <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">{frontendEngineerJob.title}</h1>
+          <h1 className="text-3xl font-bold mb-2">{embeddedEngineerJob.title}</h1>
           <div className="flex flex-wrap gap-4 text-gray-600 mb-4">
-            <span>{frontendEngineerJob.location}</span>
+            <span>{embeddedEngineerJob.location}</span>
             <span>•</span>
-            <span>{frontendEngineerJob.type}</span>
+            <span>{embeddedEngineerJob.type}</span>
             <span>•</span>
-            <span>{frontendEngineerJob.department}</span>
+            <span>{embeddedEngineerJob.department}</span>
           </div>
           <Link
             href="#apply"
@@ -80,7 +79,7 @@ export default async function Home({ }) {
 
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">A propos du poste</h2>
-          {frontendEngineerJob.description.map((paragraph, index) => (
+          {embeddedEngineerJob.description.map((paragraph, index) => (
             <p key={index} className="mb-4 text-gray-700">{paragraph}</p>
           ))}
         </div>
@@ -88,7 +87,7 @@ export default async function Home({ }) {
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Résponsabilités</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            {frontendEngineerJob.responsibilities.map((item, index) => (
+            {embeddedEngineerJob.responsibilities.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
@@ -97,7 +96,7 @@ export default async function Home({ }) {
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Prérequis</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            {frontendEngineerJob.requirements.map((item, index) => (
+            {embeddedEngineerJob.requirements.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>

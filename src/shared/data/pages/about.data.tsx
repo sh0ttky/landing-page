@@ -65,10 +65,10 @@ export const hero2About: HeroProps = {
 
 
 export const BlogSection: HeroProps = {
-  title: 'Actualitééé !',
+  title: 'Articles',
   subtitle:
 
-    "Hak jdid.",
+    "Plongez dans des analyses techniques signées par nos ingénieurs.",
 
   callToAction: {
     text: 'Nous rejoindre',
@@ -130,7 +130,7 @@ export const statsAbout: StatsProps = {
       description: 'Depuis',
     },
     {
-      title: 32,
+      title: 11,
       description: 'Projets',
     },
     {

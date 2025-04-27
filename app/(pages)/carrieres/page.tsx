@@ -20,27 +20,12 @@ const jobs = [
     tags: ["Ingénierie", "Frontend", "React"]
   },
   {
-    id: 2,
-    link: "carrieres/sm-6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-    title: "Responsable Commercial",
-    description: "Pilotez notre équipe commerciale et développez notre croissance grâce à des partenariats stratégiques.",
-    tags: ["Ventes", "Management", "Business"]
-  },
-  {
-    id: 3,
-    link: "carrieres/be-f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    title: "Développeur Backend",
-    description: "Concevez et implémentez des services backend scalables avec Node.js et PostgreSQL.",
-    tags: ["Ingénierie", "Backend", "Node.js"]
-  },
-  {
-    id: 4,
-    link: "carrieres/sm-1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
-    title: "Spécialiste Marketing",
-    description: "Créez et déployez des campagnes de marketing digital pour étendre notre notoriété.",
-    tags: ["Marketing", "Digital", "Contenu"]
-  },
-
+    id: 1,
+    link: "carrieres/ee-f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    title: "Ingénieur embarqué",
+    description: "Designer des systemes embarqués en C++ et C.",
+    tags: ["Ingénierie", "Embarqué", "C++/C"]
+  }
 ];
 
 export default async function Home({ }) {
