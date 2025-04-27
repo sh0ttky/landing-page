@@ -12,27 +12,27 @@ import {
     Text
 } from '@react-email/components';
 
-
 interface noReplyCandidatureEmailProps {
     name: string | null;
+    position?: string;
 }
 
-export function noReplyCandidatureEmail({ name }: noReplyCandidatureEmailProps) {
+export default function noReplyCandidatureEmail({ name, position }: noReplyCandidatureEmailProps) {
     return (
         <Html>
             <Head>
-                <title>Confirmation de réception du message</title>
+                <title>Confirmation de réception de votre candidature</title>
             </Head>
-            <Preview>Merci d’avoir contacté MHTC - Embedded. Nous avons bien reçu votre message.</Preview>
+            <Preview>Nous avons bien reçu votre candidature à MHTC - Embedded</Preview>
             <Tailwind>
-                <Body className="bg-white text-gray-900 font-sans">
-                    <Container className="max-w-[480px] my-0 mx-auto pt-5 pb-12 px-0">
+                <Body className="bg-gray-100 text-gray-900 font-sans">
+                    <Container className="max-w-[900px] my-0 mx-auto pt-5 pb-12 px-0">
                         <Link href="https://www.mhtc-embedded.com" className="flex items-center text-gray-800">
                             <Img
                                 src="https://www.mhtc-embedded.com/logo.png"
                                 width="32"
                                 height="32"
-                                alt="mhtc"
+                                alt="MHTC"
                                 className="mr-1 -ml-1"
                             />
                             <Heading as="h1" className="text-3xl font-bold m-0">
@@ -40,27 +40,41 @@ export function noReplyCandidatureEmail({ name }: noReplyCandidatureEmailProps) 
                             </Heading>
                         </Link>
 
-                        <Text className="text-xl mt-6">
-                            Bonjour <strong>{typeof name === 'string' ? name : 'Utilisateur'}</strong>,
-                        </Text>
-                        <Text className="text-md">
-                            Nous avons bien reçu votre message. Un membre de notre équipe vous répondra dans les plus brefs délais.
-                        </Text>
+                        <Section className="mt-8">
+                            <Text className="text-xl">
+                                Bonjour <strong>{typeof name === 'string' ? name : 'Candidat'}</strong>,
+                            </Text>
 
-                        <Section className="mt-4 border border-gray-300 rounded-md p-4 bg-gray-50">
-                            <Text className="text-sm text-gray-600">
-                                Ceci est un e-mail automatique de confirmation. Merci de ne pas y répondre.
+                            <Text className="text-md mt-4">
+                                Nous avons bien reçu votre candidature {position ? `au poste de ${position}` : ''} et vous remercions de l'intérêt que vous portez à MHTC - Embedded.
+                            </Text>
+
+                            <Text className="text-md mt-4">
+                                Nous allons l'étudier avec la plus grande attention et nous ne manquerons pas de vous contacter si votre profil correspond à nos besoins actuels.
+                            </Text>
+
+                            <Text className="text-md mt-4">
+                                Sans nouvelles de notre part dans un délai de deux semaines, veuillez considérer que nous ne sommes pas en mesure de donner suite favorable à votre candidature pour le moment.
+                            </Text>
+
+                            <Text className="text-md mt-6">
+                                Bien cordialement,
+                            </Text>
+                            <Text className="text-md">
+                                L'équipe de recrutement MHTC - Embedded
                             </Text>
                         </Section>
 
-                        <Text className="text-gray-500 text-xs text-center mt-5">
-                            <Link
-                                href="https://www.mhtc-embedded.com"
-                                className="underline text-gray-500 underline-offset-2"
-                            >
-                                MHTC - Embedded
-                            </Link> ・ Tous droits réservés
-                        </Text>
+                        <Section className="mt-8 border-t border-gray-200 pt-4">
+                            <Text className="text-sm text-gray-600 text-center">
+                                <Link href="https://www.mhtc-embedded.com" className="underline text-gray-600 underline-offset-2">
+                                    MHTC - Embedded
+                                </Link> ・ Tous droits réservés
+                            </Text>
+                            <Text className="text-xs text-gray-500 text-center mt-2">
+                                Ceci est un message automatique, merci de ne pas y répondre.
+                            </Text>
+                        </Section>
                     </Container>
                 </Body>
             </Tailwind>

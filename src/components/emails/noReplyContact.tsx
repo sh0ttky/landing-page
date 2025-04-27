@@ -17,7 +17,7 @@ interface noReplyContactEmailProps {
     name: string | null;
 }
 
-export function noReplyContactEmail({ name }: noReplyContactEmailProps) {
+export default function noReplyContactEmail({ name }: noReplyContactEmailProps) {
     return (
         <Html>
             <Head>

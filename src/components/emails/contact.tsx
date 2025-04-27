@@ -3,23 +3,24 @@ import * as React from 'react';
 interface EmailTemplateProps {
     name: string;
     email: string;
+    motif: string;
     message: string;
 }
 
-export default function EmailTemplate({
+export default function ContactEmailTemplate({
     name,
     email,
+    motif,
     message,
 }: EmailTemplateProps) {
     return (
         <div>
-            <h1>Contact form</h1>
-            <div>From: {name}</div>
+            <h1>Contact</h1>
+            <div>De: {name}</div>
             <div>Email: {email}</div>
-            <div>Message:</div>
+            <div>Motif: {motif}</div>
+            <div>Le message:</div>
             <div>{message}</div>
-            <hr />
-            <div>a message sent from the contact form.</div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import CandidatureForm from '~/components/widgets/CandidatureForm';
 import Contact2 from '~/components/widgets/Contact2';
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 
@@ -133,7 +134,7 @@ export default async function Home({ }) {
 
                 <div id="apply" className="pt-8">
                     <h2 className="text-2xl font-bold mb-6">Apply for this position</h2>
-                    <Contact2 {...contact2Contact} />
+                    <CandidatureForm position={frontendEngineerJob.title} />
                 </div>
             </div>
 

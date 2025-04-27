@@ -5,27 +5,28 @@ interface EmailTemplateProps {
     email: string;
     telephone: string;
     salaire: string;
+    position: string;
     message: string;
 }
 
-export default function EmailTemplate({
+export default function CandidatureEmailTemplate({
     name,
     email,
     telephone,
     salaire,
+    position,
     message,
 }: EmailTemplateProps) {
     return (
         <div>
-            <h1>Contact form</h1>
+            <h1>Nouvelle candidature</h1>
             <div>From: {name}</div>
             <div>Email: {email}</div>
             <div>Tel: {telephone}</div>
             <div>Salaire: {salaire}</div>
-            <div>Message:</div>
+            <div>poste: {position}</div>
+            <div>Motivation:</div>
             <div>{message}</div>
-            <hr />
-            <div>a message sent from the contact form.</div>
         </div>
     );
 }
