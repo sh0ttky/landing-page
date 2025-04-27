@@ -25,7 +25,7 @@ const Features3 = ({
       columns={columns}
       defaultColumns={3}
       panelClass="card h-full relative flex flex-col text-center border bg-gray-100 hover:shadow-lg p-8"
-      iconClass="h-12 w-12 flex justify-center items-center rounded-md text-white bg-blue-800 mb-6 p-2 md:p-3 mx-auto"
+      iconClass="h-12 w-12 flex justify-center items-center rounded-md text-white bg-inherit text-blue-800 mb-6 p-2 md:p-3 mx-auto"
       titleClass="mb-3 text-xl font-bold"
       descriptionClass="text-gray-600 dark:text-slate-400"
     />

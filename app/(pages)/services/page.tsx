@@ -3,6 +3,7 @@ import Bonda from '~/components/widgets/Bonda';
 import CallToAction from '~/components/widgets/CallToAction';
 import Contact2 from '~/components/widgets/Contact2';
 import Content from '~/components/widgets/Content';
+import ContentServices from '~/components/widgets/ContentServices';
 import FAQs from '~/components/widgets/FAQs';
 import Features2 from '~/components/widgets/Features2';
 import Features4 from '~/components/widgets/Features4';
@@ -30,7 +31,7 @@ const Page = () => {
       <Hero {...heroServices} />
       <Bonda />
       <Features2 {...features2Services} />
-      <Content {...contentServicesOne} />
+      <ContentServices {...contentServicesOne} />
       <Content {...contentServicesTwo} />
       {/* <Features4 {...features4Services} /> */}
       {/* <Testimonials {...testimonialsServices} /> */}

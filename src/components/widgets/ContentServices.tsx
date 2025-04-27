@@ -8,7 +8,7 @@ import WidgetWrapper from '../common/WidgetWrapper';
 import ItemGrid from '../common/ItemGrid';
 import { ModelViewer } from './3D';
 
-const Content = ({
+const ContentServices = ({
   header,
   content,
   items,
@@ -46,7 +46,7 @@ const Content = ({
               {/* Main Image */}
               <Image
                 className="m-auto rounded-t-sm  bg-gray-400 dark:bg-slate-700"
-                src={"/picz/12.jpg"}
+                src={"/picz/9.png"}
                 width={750}
                 height={950}
                 alt={"/picz/.png"}
@@ -59,7 +59,7 @@ const Content = ({
                 {/* Main Image */}
                 <Image
                   className="m-auto rounded-b-sm  bg-gray-400 dark:bg-slate-700"
-                  src={"/picz/3.png"}
+                  src={"/picz/10.png"}
                   width={750}
                   height={950}
                   alt={"/picz/2.png"}
@@ -83,4 +83,4 @@ const Content = ({
   </WidgetWrapper>
 );
 
-export default Content;
+export default ContentServices;

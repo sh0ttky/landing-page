@@ -137,10 +137,10 @@ export const contentServicesOne: ContentProps = {
         + '- Injection de défauts protocolaires',
     },
   ],
-  // image: {
-  //   src: testBenchSystemImg, // À remplacer par une image de votre banc
-  //   alt: 'Plateforme de test modulaire avec interfaces multiples',
-  // },
+  image: {
+    src: "/picz/12.png",
+    alt: 'Plateforme de test modulaire avec interfaces multiples',
+  },
   isReversed: true,
   isAfterContent: false,
 };
@@ -194,10 +194,10 @@ export const contentServicesTwo: ContentProps = {
         + '- Version industrielle (OT/IEC 62443)',
     },
   ],
-  // image: {
-  //   src: usbSecurityDeviceImg, // À remplacer par une image du produit
-  //   alt: 'Système de sécurité USB avec interface de gestion',
-  // },
+  image: {
+    src: "/picz/3.png",
+    alt: 'Système de sécurité USB avec interface de gestion',
+  },
   isReversed: false,
   isAfterContent: false,
 };
