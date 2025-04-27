@@ -181,7 +181,7 @@ const Form = ({
                     value={label} // Send actual label as value
                     checked={radioBtnValue === label}
                     onChange={changeRadioBtnsHandler}
-                    className="cursor-pointer"
+                    className="cursor-pointer h-4 w-4"
                   />
                   <label htmlFor={label} className="ml-2">
                     {label}
@@ -220,7 +220,8 @@ const Form = ({
                   name={label}
                   checked={checkedState[index]}
                   onChange={() => changeCheckboxHandler(index)}
-                  className="cursor-pointer"
+                  required
+                  className="cursor-pointer h-4 w-4"
                 />
                 <label htmlFor={label} className="ml-2">
                   {label}
