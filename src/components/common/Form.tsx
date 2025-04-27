@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { FormProps } from '../../shared/types';
 import { SendInternalContactEmail, SendNoReplyContactEmail } from 'actions/send-email';
+import { Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
 
 interface FormInputValues {
   [key: string]: string;
@@ -99,6 +101,7 @@ const Form = ({
         resetForm();
       } else {
         setSubmitStatus({ success: true });
+        toast.success('Message envoyé avec succès');
         resetForm();
       }
 
@@ -231,10 +234,21 @@ const Form = ({
         <div
           className={`${btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'}`}
         >
-          <button type="submit" className="  bg-blue-900 text-white m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
+
+          <button
+            type="submit"
             disabled={isSubmitting}
+            className={`w-full flex justify-center items-center gap-2 bg-blue-900 text-white py-2 px-4  hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 ${isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
+              }`}
           >
-            {isSubmitting ? 'Envoi...' : btn.title}
+            {isSubmitting ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Envoi en cours...
+              </>
+            ) : (
+              'Envoyer'
+            )}
           </button>
         </div>
       )}
