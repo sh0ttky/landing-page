@@ -16,14 +16,12 @@ const Steps = ({
 }: StepsProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl ">
     <div
-      className={`flex flex-col gap-8 md:gap-12 ${isReversed ? 'md:flex-row-reverse' : ''} ${
-        isImageDisplayed ? 'md:flex-row' : ''
-      }`}
+      className={`flex flex-col gap-8 md:gap-12 ${isReversed ? 'md:flex-row-reverse' : ''} ${isImageDisplayed ? 'md:flex-row' : ''
+        }`}
     >
       <div
-        className={`md:py-4 ${
-          isImageDisplayed ? 'md:pr-16 md:rtl:pr-0 md:rtl:pl-16 md:basis-1/2' : 'max-w-4xl mx-auto md:self-center'
-        }`}
+        className={`md:py-4 ${isImageDisplayed ? 'md:pr-16 md:rtl:pr-0 md:rtl:pl-16 md:basis-1/2' : 'max-w-4xl mx-auto md:self-center'
+          }`}
       >
         {header && (
           <Headline
@@ -33,7 +31,7 @@ const Steps = ({
             subtitleClass={isImageDisplayed ? 'text-left rtl:text-right' : ''}
           />
         )}
-        <Timeline items={items} defaultIcon={IconCheck} iconClass="text-primary border-primary-900" />
+        <Timeline items={items} defaultIcon={IconCheck} iconClass="text-blue-800 border-blue-800" />
       </div>
       {isImageDisplayed && (
         <div className="relative md:basis-1/2">

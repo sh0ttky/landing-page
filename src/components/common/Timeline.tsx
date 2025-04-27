@@ -19,9 +19,8 @@ const Timeline = ({
             <div key={id ? `item-${id}-${index}` : `item-grid-${index}`} className={twMerge('flex', panelClass)}>
               <div className="flex flex-col items-center mr-4 rtl:mr-0 rtl:ml-4">
                 <div
-                  className={`flex items-center justify-center ${
-                    index !== items.length - 1 ? '' : 'text-slate-200 rounded-full bg-foreground'
-                  }`}
+                  className={`flex items-center justify-center ${index !== items.length - 1 ? '' : 'text-white rounded-full bg-blue-800 '
+                    }`}
                 >
                   {Icon ? (
                     <Icon className={twMerge('w-10 h-10 p-2 rounded-full border-2', iconClass)} />
@@ -30,7 +29,7 @@ const Timeline = ({
                   ) : null}
                 </div>
 
-                {index !== items.length - 1 && <div className="w-px h-full bg-black/10 dark:bg-slate-400/50" />}
+                {index !== items.length - 1 && <div className="w-px h-full bg-blue-800 dark:bg-slate-400/50" />}
               </div>
               <div className={`pt-1 ${index !== items.length - 1 ? 'pb-8' : ''}`}>
                 {title && (
