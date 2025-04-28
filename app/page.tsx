@@ -1,3 +1,4 @@
+'use client'
 import type { Metadata } from 'next';
 
 import { SITE } from '~/config.js';
