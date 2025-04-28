@@ -36,19 +36,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             </div>
             <div className="block flex-1 items-center md:flex">
               <div className="relative m-auto h-full max-w-4xl object-cover">
-                {/* {image && (
-                <Image
-                  className="mx-auto h-full w-auto rounded-md bg-gray-400 object-cover drop-shadow-2xl dark:bg-slate-700"
-                  src={image.src}
-                  alt={image.alt}
-                  width={540}
-                  height={405}
-                  sizes="(min-width: 1920px) 749px, (min-width: 1540px) 43.89vw, (min-width: 1360px) 542px, (min-width: 780px) calc(39.29vw + 16px), calc(96.52vw - 22px)"
-                  loading="eager"
-                  placeholder="blur"
-                  priority
-                />
-              )} */}
+
               </div>
             </div>
           </div>

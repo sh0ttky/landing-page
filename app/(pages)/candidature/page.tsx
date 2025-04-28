@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Bonda from '~/components/widgets/Bonda';
+import CandidatureForm from '~/components/widgets/CandidatureForm';
 
 import Contact2 from '~/components/widgets/Contact2';
 import Features2 from '~/components/widgets/Features2';
 import Hero from '~/components/widgets/Hero';
-import { heroContact, contact2Contact, features2Contact } from '~/shared/data/pages/contact.data';
+import { heroCandidature } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
   title: 'Candidature spontanée',
@@ -13,10 +14,12 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Hero {...heroContact} />
+      <Hero {...heroCandidature} />
       <Bonda />
-      <Contact2 {...contact2Contact} />
-      {/*   <Features2 {...features2Contact} />*/}
+      <div id="apply" className="pt-8">
+        <h2 className="text-2xl text-center font-bold mb-6">Candidature spontanée</h2>
+        <CandidatureForm position='' />
+      </div>
     </>
   );
 };

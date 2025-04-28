@@ -61,6 +61,6 @@ export default async function Home({ }) {
 
 
       </section>
-      <Spontane {...SpontaneSection} /></>
+      <Spontane id='#offres' {...SpontaneSection} /></>
   );
 }

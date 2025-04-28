@@ -93,7 +93,7 @@ export const SpontaneSection: FeaturesProps = {
   },
   callToAction2: {
     text: `Candidature spontanée`,
-    href: '/contact',
+    href: '/candidature',
   },
 };
 
@@ -109,10 +109,7 @@ export const CareerSection: HeroProps = {
     href: 'https://www.linkedin.com/',
     targetBlank: true,
   },
-  callToAction2: {
-    text: `Nous offres d'emploi`,
-    href: '/contact',
-  },
+
   image: {
     src: hero2Img,
     alt: 'Hero TailNext',

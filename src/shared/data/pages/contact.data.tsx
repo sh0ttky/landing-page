@@ -14,6 +14,16 @@ export const heroContact: HeroProps = {
   tagline: 'Contactez MHTC',
 };
 
+
+export const heroCandidature: HeroProps = {
+  title: 'Candidature spontanée',
+  subtitle: (
+    <span className="hidden md:inline">{`Vous souhaitez envoyer une candidature spontanée ?
+      `}</span>
+  ),
+  tagline: 'Rejoignez-nous !',
+};
+
 // Contact data on Contact page *******************
 export const contact2Contact: ContactProps = {
   id: 'contactTwo-on-contact',

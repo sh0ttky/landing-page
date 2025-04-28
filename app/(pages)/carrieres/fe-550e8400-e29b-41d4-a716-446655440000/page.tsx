@@ -108,13 +108,13 @@ export default async function Home({ }) {
         <h2 className="text-2xl font-bold mb-6">Postes ouverts</h2>
         <div className="grid grid-cols-1 gap-6 p-4 md:p-0 lg:grid-cols-2">
           {jobs.map(({ id, link, title, description, tags }) => (
-            <div key={id} className="flex flex-col overflow-hidden rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div key={id} className="flex flex-col overflow-hidden  border bg-gray-100 border-gray-200  hover:shadow-lg transition-shadow duration-300">
               <Link href={link} className="h-full p-6 flex flex-col">
                 <h2 className="text-xl font-bold mb-2">{title}</h2>
                 <p className="text-gray-600 mb-4 flex-grow">{description}</p>
                 <div className="flex flex-wrap gap-2">
                   {tags.map((tag, index) => (
-                    <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">
+                    <span key={index} className="px-3 py-1  bg-blue-800 text-white border-blue-900  text-sm rounded-full">
                       {tag}
                     </span>
                   ))}
