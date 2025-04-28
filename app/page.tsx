@@ -35,9 +35,6 @@ import Contact2 from '~/components/widgets/Contact2';
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 import Content2 from '~/components/widgets/Content2';
 
-export const metadata: Metadata = {
-  title: SITE.title,
-};
 
 export default function Page() {
   return (
