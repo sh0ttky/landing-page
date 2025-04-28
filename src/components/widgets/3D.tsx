@@ -8,20 +8,23 @@ interface ModelViewerProps {
 }
 
 function Model({ modelPath }: { modelPath: string }) {
-  try {
-    // Add null check for modelPath
-    if (!modelPath) {
-      console.error('Model path is not provided');
-      return null;
-    }
+  // Call the hook unconditionally at the top level
+  const gltf = useGLTF(modelPath, true);
 
-    const { scene } = useGLTF(modelPath, true);
-    return <primitive object={scene} />;
+  // Return null early if modelPath is invalid
+  if (!modelPath) {
+    console.error('Model path is not provided');
+    return null;
+  }
+
+  try {
+    return <primitive object={gltf.scene} />;
   } catch (error) {
     console.error('Failed to load model:', error);
     return null;
   }
 }
+
 export function ModelViewer({ modelPath }: ModelViewerProps) {
   const [mounted, setMounted] = useState(false);
 
@@ -30,7 +33,7 @@ export function ModelViewer({ modelPath }: ModelViewerProps) {
     return () => setMounted(false);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted || !modelPath) return null;
 
   return (
     <div style={{ width: '100%', height: '100vh' }}>
@@ -41,7 +44,6 @@ export function ModelViewer({ modelPath }: ModelViewerProps) {
           target={[0, 0, 0]}
           minPolarAngle={0}
           maxPolarAngle={Math.PI / 2}
-
         />
 
         <ambientLight intensity={0.5} />
@@ -55,10 +57,10 @@ export function ModelViewer({ modelPath }: ModelViewerProps) {
         <Environment preset="studio" />
 
         <Suspense fallback={null}>
-          <Bounds fit margin={1.6}>  {/* This will auto-scale your model */}
+          <Bounds fit margin={1.6}>
             <Center>
               <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1}>
-                <Model modelPath={modelPath!} />
+                <Model modelPath={modelPath} />
               </Float>
             </Center>
           </Bounds>
@@ -66,7 +68,7 @@ export function ModelViewer({ modelPath }: ModelViewerProps) {
 
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.5, 0]} receiveShadow>
           <planeGeometry args={[20, 20]} />
-          <meshStandardMaterial color="#f0f0f0" />  {/* Fixed color syntax */}
+          <meshStandardMaterial color="#f0f0f0" />
         </mesh>
 
         <ContactShadows
