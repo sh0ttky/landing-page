@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import CandidatureForm from '~/components/widgets/CandidatureForm';
 import Contact2 from '~/components/widgets/Contact2';
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const jobs = [
   {
     id: 1,
-    link: "carrieres/fe-550e8400-e29b-41d4-a716-446655440000",
+    link: "/carrieres/fe-550e8400-e29b-41d4-a716-446655440000",
     title: "Ingénieur Frontend",
     description: "Rejoignez notre équipe pour développer des interfaces utilisateur élégantes et réactives avec React et Next.js.",
     tags: ["Ingénierie", "Frontend", "React"]
@@ -69,12 +70,7 @@ export default async function Home({ }) {
             <span>•</span>
             <span>{embeddedEngineerJob.department}</span>
           </div>
-          <Link
-            href="#apply"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200"
-          >
-            Apply Now
-          </Link>
+
         </div>
 
         <div className="mb-8">
@@ -104,7 +100,7 @@ export default async function Home({ }) {
 
         <div id="apply" className="pt-8">
           <h2 className="text-2xl font-bold mb-6">Candidater</h2>
-          <Contact2 {...contact2Contact} />
+          <CandidatureForm position='Ingénieur Embarqué' />
         </div>
       </div>
 

@@ -46,10 +46,10 @@ const Content = ({
               {/* Main Image */}
               <Image
                 className="m-auto rounded-t-sm  bg-gray-400 dark:bg-slate-700"
-                src={"/picz/12.jpg"}
+                src={"/picz/4.png"}
                 width={750}
                 height={950}
-                alt={"/picz/.png"}
+                alt={"/picz/4.png"}
                 sizes=""
                 quality={100} />
 
@@ -59,7 +59,7 @@ const Content = ({
                 {/* Main Image */}
                 <Image
                   className="m-auto rounded-b-sm  bg-gray-400 dark:bg-slate-700"
-                  src={"/picz/3.png"}
+                  src={"/picz/6.png"}
                   width={750}
                   height={950}
                   alt={"/picz/2.png"}

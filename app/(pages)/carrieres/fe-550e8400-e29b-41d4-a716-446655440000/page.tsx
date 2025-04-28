@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const jobs = [
   {
     id: 1,
-    link: "carrieres/ee-f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    link: "/carrieres/ee-f47ac10b-58cc-4372-a567-0e02b2c3d479",
     title: "Ingénieur embarqué",
     description: "Designer des systemes embarqués en C++ et C.",
     tags: ["Ingénierie", "Embarqué", "C++/C"]
@@ -70,12 +70,7 @@ export default async function Home({ }) {
             <span>•</span>
             <span>{frontendEngineerJob.department}</span>
           </div>
-          <Link
-            href="#apply"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200"
-          >
-            Apply Now
-          </Link>
+
         </div>
 
         <div className="mb-8">
@@ -104,8 +99,7 @@ export default async function Home({ }) {
         </div>
 
         <div id="apply" className="pt-8">
-          <h2 className="text-2xl font-bold mb-6">Candidater</h2>
-          <Contact2 {...contact2Contact} />
+          <CandidatureForm position='Ingénieur Frontend' />
         </div>
       </div>
 
